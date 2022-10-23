@@ -1,7 +1,7 @@
 .container {
 	background-color: #fff;
 	width: 100%;
-	padding: 2rem 4rem;
+	padding: 1rem 4rem;
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px solid grey;
@@ -12,4 +12,13 @@
 	gap: 20px;
 	list-style: none;
 	font-size: larger;
+}
+
+.navigation > ul > li {
+	border-bottom: 2px grey solid;
+}
+
+.navigation > ul > li:hover {
+	border-bottom: 2px pink dotted;
+	cursor: pointer;
 }

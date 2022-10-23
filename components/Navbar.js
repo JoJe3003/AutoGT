@@ -10,9 +10,9 @@ function Navbar() {
 				<Link href="/">
 					<a href="#">
 						<Image
-							src="/favicon.ico"
-							width="60px"
-							height="60px"
+							src="/Logo.svg"
+							width="140px"
+							height="55px"
 							alt="Website logo"
 						></Image>
 					</a>
@@ -20,9 +20,18 @@ function Navbar() {
 			</div>
 			<nav className={styles.navigation}>
 				<ul>
-					<li>Biler</li>
-					<li>Informasjon</li>
-					<li>Kontakt</li>
+					<li>
+						<Link href="/om-oss">Om oss</Link>
+					</li>
+					<li>
+						<Link href="/inventar">Inventar</Link>
+					</li>
+					<li>
+						<Link href="/selg-bilen-din">Selg bilen din</Link>
+					</li>
+					<li>
+						<Link href="/kontakt">Kontakt oss</Link>
+					</li>
 				</ul>
 			</nav>
 		</div>
