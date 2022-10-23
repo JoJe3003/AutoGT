@@ -10,7 +10,7 @@ function Navbar() {
 				<Link href="/">
 					<a href="#">
 						<Image
-							src="/Logo.svg"
+							src="/Logo.pdf"
 							width="140px"
 							height="55px"
 							alt="Website logo"
