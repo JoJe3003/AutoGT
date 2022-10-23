@@ -6,13 +6,13 @@ import logosrc from '../public/AutoGT.png';
 
 function Navbar() {
 	return (
-		<div className={styles.container}>
+		<nav className={styles.container}>
 			<div className={styles.logo}>
 				<Link href="/">
 					<Image src={logosrc} alt="Website logo" priority></Image>
 				</Link>
 			</div>
-			<nav className={styles.navigation}>
+			<div className={styles.navigation}>
 				<ul>
 					<li>
 						<Link href="/om-oss">Om oss</Link>
@@ -27,8 +27,8 @@ function Navbar() {
 						<Link href="/kontakt">Kontakt oss</Link>
 					</li>
 				</ul>
-			</nav>
-		</div>
+			</div>
+		</nav>
 	);
 }
 
