@@ -2,20 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/Navbar.module.css';
+import logosrc from '../public/AutoGT.png';
 
 function Navbar() {
 	return (
 		<div className={styles.container}>
 			<div className={styles.logo}>
 				<Link href="/">
-					<a href="#">
-						<Image
-							src="/Logo.pdf"
-							width="140px"
-							height="55px"
-							alt="Website logo"
-						></Image>
-					</a>
+					<Image src={logosrc} alt="Website logo" priority></Image>
 				</Link>
 			</div>
 			<nav className={styles.navigation}>

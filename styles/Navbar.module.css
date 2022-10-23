@@ -5,6 +5,17 @@
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px solid grey;
+	position: sticky;
+	top: 0;
+
+	z-index: 1;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 120px;
 }
 
 .navigation > ul {
@@ -21,4 +32,10 @@
 .navigation > ul > li:hover {
 	border-bottom: 2px pink dotted;
 	cursor: pointer;
+}
+
+@media (max-width: 740px) {
+	.navigation {
+		display: none;
+	}
 }
