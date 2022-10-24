@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
 	font-family: 'metropolis';
 	src: url('../asset/metropolis/Metropolis-Regular.otf');
