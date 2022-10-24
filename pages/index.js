@@ -9,12 +9,24 @@ export default function Home() {
 			<Head>
 				<title>AutoGT</title>
 			</Head>
-			<div className={styles.container}>
-				<div className={styles.hero}>
-					<div>
-						<Image src={heroimg} alt="Bilde av to biler" priority></Image>
-					</div>
-					<h1>Bilsalg gjort enkelt</h1>
+			<div className={styles.hero}>
+				<div className={styles.heroWrapper}>
+					<Image
+						src={heroimg}
+						alt="Bilde av to biler"
+						layout="fill"
+						objectFit="cover"
+						objectPosition="center"
+						priority
+					/>
+				</div>
+				<div className={styles.heroText}>
+					<h1>Velkommen til AutoGT</h1>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+						blanditiis quisquam sapiente voluptates est.
+					</p>
+					<button>Utforsk bilsortiment</button>
 				</div>
 			</div>
 		</>
