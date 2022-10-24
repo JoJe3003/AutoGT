@@ -1,15 +1,18 @@
 import Head from 'next/head';
 import React from 'react';
+import Data from '../components/Data';
 
-function Inventar() {
+function inventar() {
 	return (
 		<>
 			<Head>
 				<title>AutoGT | Inventar</title>
 			</Head>
-			<div>Inventar</div>;
+			<div>
+				<Data />
+			</div>
 		</>
 	);
 }
 
-export default Inventar;
+export default inventar;
