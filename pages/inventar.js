@@ -6,7 +6,7 @@ function inventar() {
 	return (
 		<>
 			<Head>
-				<title>AutoGT | Inventar</title>
+				<title>Auto GT | Inventar</title>
 			</Head>
 			<div>
 				<Data />

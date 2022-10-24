@@ -6,27 +6,59 @@ import logosrc from '../public/AutoGT.png';
 
 function Navbar() {
 	return (
-		<nav className="bg-white w-full py-4 px-16 flex justify-between items-center sticky top-0 opacity-90 z-10">
+		<nav className="bg-white w-full py-4 px-10 flex justify-between items-center sticky top-0 z-10">
 			<div className="flex justify-center items-center max-w-[120px]">
 				<Link href="/">
 					<Image src={logosrc} alt="Website logo" priority></Image>
 				</Link>
 			</div>
 			<div>
-				<ul className="gap-2 text-lg hidden md:flex">
-					<li className="px-3 py-1">
-						<Link href="/om-oss">Om oss</Link>
-					</li>
-					<li className="px-3 py-1">
-						<Link href="/inventar">Inventar</Link>
-					</li>
-					<li className="px-3 py-1">
-						<Link href="/selg-bilen-din">Selg bilen din</Link>
-					</li>
-					<li className="px-3 py-1">
-						<Link href="/kontakt">Kontakt oss</Link>
-					</li>
-				</ul>
+				<button
+					data-collapse-toggle="navbar-default"
+					type="button"
+					className="inline-flex items-center text-gray-800 p-2 text-md rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+					aria-controls="navbar-default"
+					aria-expanded="false"
+				>
+					<span className="sr-only">Åpne menyen</span>
+					<svg
+						className="w-8 h-8"
+						aria-hidden="true"
+						fill="currentColor"
+						viewBox="0 0 20 20"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+							clip-rule="evenodd"
+						></path>
+					</svg>
+				</button>
+				<div id="navbar-default">
+					<ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+						<li className="px-3 py-1">
+							<a href="#" aria-current="page">
+								<Link href="/om-oss">Om oss</Link>
+							</a>
+						</li>
+						<li className="px-3 py-1">
+							<a href="#">
+								<Link href="/inventar">Inventar</Link>
+							</a>
+						</li>
+						<li className="px-3 py-1">
+							<a href="#">
+								<Link href="/selg-bilen-din">Selg bilen din</Link>
+							</a>
+						</li>
+						<li className="px-3 py-1">
+							<a href="#">
+								<Link href="/kontakt">Kontakt oss</Link>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	);

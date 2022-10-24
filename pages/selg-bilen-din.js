@@ -5,7 +5,7 @@ function selgbilendin() {
 	return (
 		<>
 			<Head>
-				<title>AutoGT | Selg bilen din</title>
+				<title>Auto GT | Selg bilen din</title>
 			</Head>
 			<div>Selg bilen din!</div>
 		</>

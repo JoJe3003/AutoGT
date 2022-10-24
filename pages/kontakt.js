@@ -5,7 +5,7 @@ function kontakt() {
 	return (
 		<>
 			<Head>
-				<title>AutoGT | Kontakt</title>
+				<title>Auto GT | Kontakt</title>
 			</Head>
 			<div>Kontakt</div>;
 		</>

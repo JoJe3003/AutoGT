@@ -8,9 +8,14 @@ export default function Data() {
 
 	const axios = require('axios');
 
-	axios.get(detaljertAPI).then((response) => {
-		const xmlData = response.data;
-		console.log(xmlData);
-	});
+	axios
+		.get(detaljertAPI)
+		.then((response) => {
+			const xmlData = response.data;
+			console.log(xmlData);
+		})
+		.catch((error) => {
+			console.log(error);
+		});
 	return <div>Data</div>;
 }

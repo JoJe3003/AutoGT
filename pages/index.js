@@ -7,7 +7,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>AutoGT</title>
+				<title>Auto GT</title>
 			</Head>
 			<div className={styles.hero}>
 				<div className={styles.heroWrapper}>
@@ -21,12 +21,12 @@ export default function Home() {
 					/>
 				</div>
 				<div className={styles.heroText}>
-					<h1>Velkommen til AutoGT</h1>
+					<h1>Velkommen til Auto GT</h1>
 					<p className="mx-16 my-4">
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
 						blanditiis quisquam sapiente voluptates est.
 					</p>
-					<button className="px-4 py-2 bg-slate-400 rounded-md">
+					<button className="px-4 py-2 bg-red-700 rounded-md">
 						Utforsk bilsortiment
 					</button>
 				</div>
