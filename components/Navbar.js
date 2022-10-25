@@ -29,33 +29,35 @@ function Navbar() {
 						xmlns="http://www.w3.org/2000/svg"
 					>
 						<path
-							fill-rule="evenodd"
+							fillRule="evenodd"
 							d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-							clip-rule="evenodd"
+							clipRule="evenodd"
 						></path>
 					</svg>
 				</button>
 				<div id="navbar-default">
 					<ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
 						<li className="px-3 py-1">
-							<a href="#" aria-current="page">
-								<Link href="/om-oss">Om oss</Link>
-							</a>
+							<Link href="/om-oss">
+								<a href="#" aria-current="page">
+									Om oss
+								</a>
+							</Link>
 						</li>
 						<li className="px-3 py-1">
-							<a href="#">
-								<Link href="/inventar">Inventar</Link>
-							</a>
+							<Link href="/inventar">
+								<a>Inventar</a>
+							</Link>
 						</li>
 						<li className="px-3 py-1">
-							<a href="#">
-								<Link href="/selg-bilen-din">Selg bilen din</Link>
-							</a>
+							<Link href="/selg-bilen-din">
+								<a>Selg bilen din</a>
+							</Link>
 						</li>
 						<li className="px-3 py-1">
-							<a href="#">
-								<Link href="/kontakt">Kontakt oss</Link>
-							</a>
+							<Link href="/kontakt">
+								<a>Kontakt oss</a>
+							</Link>
 						</li>
 					</ul>
 				</div>
