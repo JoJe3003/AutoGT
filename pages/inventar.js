@@ -8,9 +8,7 @@ function inventar() {
 			<Head>
 				<title>Auto GT | Inventar</title>
 			</Head>
-			<div>
-				<Data />
-			</div>
+			<div>{/* <Data  */}</div>
 		</>
 	);
 }

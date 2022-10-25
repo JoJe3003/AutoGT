@@ -26,7 +26,7 @@ export default function Home() {
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
 						blanditiis quisquam sapiente voluptates est.
 					</p>
-					<button className="px-4 py-2 bg-red-700 rounded-md">
+					<button className="px-4 py-2 bg-red-700 rounded-md hover:bg-red-600">
 						Utforsk bilsortiment
 					</button>
 				</div>
