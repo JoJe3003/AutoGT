@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Webloader from '../components/Webloader';
 import styles from '../styles/Home.module.css';
 import heroimg from '/public/static/hero25.webp';
 
@@ -9,6 +10,7 @@ export default function Home() {
 			<Head>
 				<title>Auto GT</title>
 			</Head>
+			<Webloader />
 			<div className={styles.hero}>
 				<div className={styles.heroWrapper}>
 					<Image
