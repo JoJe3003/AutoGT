@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Footer() {
-	return <div className="py-8 flex justify-center items-center">© AutoGT AS</div>;
+	return <div className="flex items-center justify-center py-8">© Auto GT AS</div>;
 }
 
 export default Footer;

@@ -3,6 +3,9 @@ module.exports = {
 	content: ['./pages/**/*.{html,js}', './components/**/*.{html,js}'],
 	theme: {
 		extend: {
+			colors: {
+				accent1: '#29465b',
+			},
 			keyframes: {
 				loadFadeIn: {
 					'0%': { opacity: '0.0' },
@@ -10,15 +13,15 @@ module.exports = {
 					'100%': { opacity: '1.0' },
 				},
 				loadRemove: {
-					'0%': { opacity: '100%', transform: 'translateY(0)' },
-					'90%': { opacity: '100%', transform: 'translateY(0)' },
-					'99%': { opacity: '0%', transform: 'translateY(0)' },
-					'100%': { opacity: '0%', transform: 'translateY(-2000px)' },
+					'0%': { opacity: '100%' },
+					'90%': { opacity: '100%' },
+					'99%': { opacity: '0%' },
+					'100%': { opacity: '0%' },
 				},
 			},
 			animation: {
-				loadFadeIn: 'loadFadeIn 2s ease-in-out forwards',
-				loadRemove: 'loadRemove 3s linear forwards',
+				loadFadeIn: 'loadFadeIn 1s ease-in-out forwards',
+				loadRemove: 'loadRemove 2s linear forwards',
 			},
 		},
 	},
