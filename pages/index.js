@@ -20,6 +20,7 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Auto GT</title>
+				<script async src="https://cdn.splitbee.io/sb.js"></script>
 			</Head>
 			{loading ? <Webloader /> : null}
 
