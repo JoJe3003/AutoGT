@@ -19,7 +19,7 @@ function inventar({ data }) {
 			<h1 className="h-screen my-auto text-center text-7xl">IN DEVELOPMENT</h1>
 			<div className="inline max-w-xs">
 				{data.map((e) => (
-					<Image key={e.index} src={e} alt="Pic of car" width="1773px" height="1182px" />
+					<Image key={e.index} src={e} alt="Pic of car" width={2507} height={1672} />
 				))}
 			</div>
 		</>
