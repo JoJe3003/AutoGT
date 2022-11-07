@@ -8,11 +8,11 @@ function selgbilendin() {
 				<title>Auto GT | Selg bilen din</title>
 			</Head>
 
-			<div className="relative py-16 overflow-hidden bg-white">
+			<div className="relative overflow-hidden bg-white py-16">
 				<div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
-					<div className="relative h-full mx-auto text-lg max-w-prose" aria-hidden="true">
+					<div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
 						<svg
-							className="absolute transform translate-x-32 top-12 left-full"
+							className="absolute top-12 left-full translate-x-32 transform"
 							width={404}
 							height={384}
 							fill="none"
@@ -44,7 +44,7 @@ function selgbilendin() {
 							/>
 						</svg>
 						<svg
-							className="absolute transform -translate-x-32 -translate-y-1/2 top-1/2 right-full"
+							className="absolute top-1/2 right-full -translate-x-32 -translate-y-1/2 transform"
 							width={404}
 							height={384}
 							fill="none"
@@ -76,7 +76,7 @@ function selgbilendin() {
 							/>
 						</svg>
 						<svg
-							className="absolute transform translate-x-32 bottom-12 left-full"
+							className="absolute bottom-12 left-full translate-x-32 transform"
 							width={404}
 							height={384}
 							fill="none"
@@ -110,12 +110,12 @@ function selgbilendin() {
 					</div>
 				</div>
 				<div className="relative px-4 sm:px-6 lg:px-8">
-					<div className="mx-auto text-lg max-w-prose">
+					<div className="mx-auto max-w-prose text-lg">
 						<h1>
-							<span className="block text-lg font-semibold text-center text-indigo-600">
+							<span className="block text-center text-lg font-semibold text-indigo-600">
 								Vi hjelper deg!
 							</span>
-							<span className="block mt-2 text-3xl font-bold leading-8 tracking-tight text-center text-gray-900 sm:text-4xl">
+							<span className="mt-2 block text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
 								Selg bilen din
 							</span>
 						</h1>
@@ -129,19 +129,19 @@ function selgbilendin() {
 							innsikt i bilens verdi på raskest mulig måte.
 						</p>
 					</div>
-					<div className="mx-auto mt-6 prose prose-lg text-gray-500 prose-indigo">
+					<div className="prose-lg prose prose-indigo mx-auto mt-6 text-gray-500">
 						<p>Vi tilbyr følgende i foretrukne rekkefølge:</p>
 						<ul role="list">
 							<li>
-								<span className="text-indigo-600">Innbytte</span>
 								<p className="mx-2">
+									<span className="text-indigo-600">Innbytte. </span>
 									Vi er alltid glade for å kunne ta inn din bil der vi har
 									evaluert den opp mot verdien til en bil vi har i vårt inventar.
 								</p>
 							</li>
 							<li>
-								<span className="text-indigo-600">Vi kjøper din bil </span>
 								<p className="mx-2">
+									<span className="text-indigo-600">Vi kjøper din bil. </span>
 									Vi er meget interessert i å kunne kjøpe din velholdte bil
 									direkte av deg. For de rette bilene vil vi ikke nøle med
 									raskebeslutninger og effektiv sluttprosess. Her får du pengene
@@ -150,19 +150,19 @@ function selgbilendin() {
 								</p>
 							</li>
 							<li>
-								<span className="text-indigo-600">
-									Kommisjon 30 000,- inkl. mva.
-								</span>
 								<p className="mx-2">
+									<span className="text-indigo-600">
+										Kommisjon 30 000,- inkl. mva.{' '}
+									</span>
 									Her selger vi bilen i vårt navn og vi står med
 									reklamasjonsansvaret.{' '}
 								</p>
 							</li>
 							<li>
-								<span className="text-indigo-600">
-									Formidling 20 000,- inkl. mva.{' '}
-								</span>
 								<p className="mx-2">
+									<span className="text-indigo-600">
+										Formidling 20 000,- inkl. mva.{' '}
+									</span>
 									Her opptrer vi som mellommann og salget blir solgt i ditt navn.
 									Du er ansvarlig og reklamasjonsansvaret står på deg.
 								</p>
