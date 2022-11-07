@@ -61,7 +61,7 @@ function inventar({ data }) {
 	);
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
 	const res = await fetch(
 		'https://billink.no/page2_xml.php?kode=3baa6aaa-a8c2-4565-b6a4-4b4f4c33b5b0&butikk=agt&detaljert=1'
 	);
