@@ -1,7 +1,7 @@
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import Script from 'next/script';
 import Introduction from '../components/Introduction';
 import Webloader from '../components/Webloader';
 import heroimg from '/public/static/hero25.webp';
@@ -18,9 +18,9 @@ export default function Home() {
 
 	return (
 		<>
+			<Script async src="https://cdn.splitbee.io/sb.js" />
 			<Head>
 				<title>Auto GT</title>
-				<script async src="https://cdn.splitbee.io/sb.js"></script>
 			</Head>
 			{loading ? <Webloader /> : null}
 

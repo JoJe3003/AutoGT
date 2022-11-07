@@ -3,6 +3,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 import logosrc from '../public/AutoGT.png';
 
@@ -11,6 +12,10 @@ function classNames(...classes) {
 }
 
 export default function Alphanav() {
+	const router = useRouter();
+
+	const path = router.asPath;
+
 	return (
 		<Disclosure as="nav" className="bg-white shadow">
 			{({ open }) => (
@@ -34,7 +39,11 @@ export default function Alphanav() {
 									<Link href="/om-oss">
 										<a
 											href="#"
-											className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-indigo-500"
+											className={`inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 ${
+												path === '/om-oss'
+													? 'border-indigo-500'
+													: 'border-transparent hover:border-gray-300 hover:text-gray-700'
+											}`}
 										>
 											Om oss
 										</a>
@@ -42,7 +51,11 @@ export default function Alphanav() {
 									<Link href="/inventar">
 										<a
 											href="#"
-											className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700"
+											className={`inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 ${
+												path === '/inventar'
+													? 'border-indigo-500'
+													: 'border-transparent hover:border-gray-300 hover:text-gray-700'
+											}`}
 										>
 											Inventar
 										</a>
@@ -50,7 +63,11 @@ export default function Alphanav() {
 									<Link href="/selg-bilen-din">
 										<a
 											href="#"
-											className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700"
+											className={`inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 ${
+												path === '/selg-bilen-din'
+													? 'border-indigo-500'
+													: 'border-transparent hover:border-gray-300 hover:text-gray-700'
+											}`}
 										>
 											Selg bilen din
 										</a>
@@ -58,7 +75,11 @@ export default function Alphanav() {
 									<Link href="/kontakt">
 										<a
 											href="#"
-											className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-gray-300 hover:text-gray-700"
+											className={`inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 ${
+												path === '/kontakt'
+													? 'border-indigo-500'
+													: 'border-transparent hover:border-gray-300 hover:text-gray-700'
+											}`}
 										>
 											Kontakt oss
 										</a>
@@ -87,7 +108,11 @@ export default function Alphanav() {
 								<Disclosure.Button
 									as="a"
 									href="#"
-									className="block py-2 pl-3 pr-4 text-base font-medium text-indigo-700 border-l-4 border-indigo-500 bg-indigo-50"
+									className={`block py-2 pl-3 pr-4 text-base font-medium ${
+										path === '/om-oss'
+											? 'text-indigo-700 border-l-4 border-indigo-500 bg-indigo-50'
+											: 'text-gray-500 border-l-4 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'
+									}`}
 								>
 									Om oss
 								</Disclosure.Button>
@@ -96,7 +121,11 @@ export default function Alphanav() {
 								<Disclosure.Button
 									as="a"
 									href="#"
-									className="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+									className={`block py-2 pl-3 pr-4 text-base font-medium ${
+										path === '/inventar'
+											? 'text-indigo-700 border-l-4 border-indigo-500 bg-indigo-50'
+											: 'text-gray-500 border-l-4 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'
+									}`}
 								>
 									Inventar
 								</Disclosure.Button>
@@ -105,7 +134,11 @@ export default function Alphanav() {
 								<Disclosure.Button
 									as="a"
 									href="#"
-									className="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+									className={`block py-2 pl-3 pr-4 text-base font-medium ${
+										path === '/selg-bilen-din'
+											? 'text-indigo-700 border-l-4 border-indigo-500 bg-indigo-50'
+											: 'text-gray-500 border-l-4 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'
+									}`}
 								>
 									Selg bilen din
 								</Disclosure.Button>
@@ -114,7 +147,11 @@ export default function Alphanav() {
 								<Disclosure.Button
 									as="a"
 									href="#"
-									className="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+									className={`block py-2 pl-3 pr-4 text-base font-medium ${
+										path === '/kontakt'
+											? 'text-indigo-700 border-l-4 border-indigo-500 bg-indigo-50'
+											: 'text-gray-500 border-l-4 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'
+									}`}
 								>
 									Kontakt oss
 								</Disclosure.Button>
