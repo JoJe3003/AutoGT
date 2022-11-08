@@ -4,8 +4,10 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				accent1: '#29465b',
-				nardogrey: '#686a6c',
+				accent1: '#004225',
+				accent2: '#29465B',
+				background: '#FFFCF2',
+				nardogrey: '#686A6C',
 			},
 			keyframes: {
 				loadFadeIn: {

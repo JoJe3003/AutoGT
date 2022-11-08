@@ -5,6 +5,7 @@ import Script from 'next/script';
 import Introduction from '../components/Introduction';
 import Webloader from '../components/Webloader';
 import heroimg from '/public/static/hero25.webp';
+import { NavLinks } from '../components/Navlinks';
 
 export default function Home() {
 	const [loading, setLoading] = useState(false);
@@ -25,7 +26,7 @@ export default function Home() {
 			{loading ? <Webloader /> : null}
 
 			{/* Hero */}
-			<div className="px-30 relative flex w-full items-center justify-center object-center py-0 ">
+			<div className="px-30 relative flex w-full items-center justify-center bg-background object-center py-0">
 				<div>
 					<Image
 						src={heroimg}

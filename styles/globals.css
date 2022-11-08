@@ -24,7 +24,7 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: metropolis, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-		Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: roboto, metropolis, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	line-height: 1.6;
 }

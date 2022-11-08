@@ -10,9 +10,11 @@ function omoss() {
 			<Head>
 				<title>Auto GT | Om oss</title>
 			</Head>
-			<Introduction2 />
-			<Divider />
-			<Location />
+			<div>
+				<Introduction2 />
+				<Divider />
+				<Location />
+			</div>
 		</>
 	);
 }

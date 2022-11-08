@@ -16,7 +16,7 @@ export default function Location() {
 									Om Auto GT lokasjon.
 								</h2>
 								<div className="overflow-hidden bg-white">
-									<div className="p-6">
+									<div>
 										<p>
 											Vi holder til på bla bla bla... Lorem ipsum, dolor sit
 											amet consectetur adipisicing elit. Ut officiis quo

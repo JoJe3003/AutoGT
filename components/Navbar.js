@@ -42,7 +42,7 @@ export default function Alphanav() {
 											href="#"
 											className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
 												path === '/om-oss'
-													? 'border-indigo-500'
+													? 'border-accent1'
 													: 'border-transparent hover:border-gray-300 hover:text-gray-700'
 											}`}
 										>
@@ -54,7 +54,7 @@ export default function Alphanav() {
 											href="#"
 											className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
 												path === '/inventar'
-													? 'border-indigo-500'
+													? 'border-accent1'
 													: 'border-transparent hover:border-gray-300 hover:text-gray-700'
 											}`}
 										>
@@ -66,7 +66,7 @@ export default function Alphanav() {
 											href="#"
 											className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
 												path === '/selg-bilen-din'
-													? 'border-indigo-500'
+													? 'border-accent1'
 													: 'border-transparent hover:border-gray-300 hover:text-gray-700'
 											}`}
 										>
@@ -78,7 +78,7 @@ export default function Alphanav() {
 											href="#"
 											className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
 												path === '/kontakt'
-													? 'border-indigo-500'
+													? 'border-accent1'
 													: 'border-transparent hover:border-gray-300 hover:text-gray-700'
 											}`}
 										>
