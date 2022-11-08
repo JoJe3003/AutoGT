@@ -5,6 +5,7 @@ module.exports = {
 		extend: {
 			colors: {
 				accent1: '#29465b',
+				nardogrey: '#686a6c',
 			},
 			keyframes: {
 				loadFadeIn: {
@@ -25,5 +26,9 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [require('@tailwindcss/typography')],
+	plugins: [
+		require('@tailwindcss/typography'),
+		require('@tailwindcss/forms'),
+		require('@tailwindcss/aspect-ratio'),
+	],
 };

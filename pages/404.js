@@ -7,7 +7,7 @@ export default function NotFound() {
 	const router = useRouter();
 	console.log(router.asPath);
 	return (
-		<main
+		<div
 			className="min-h-full bg-cover bg-top sm:bg-top"
 			style={{
 				backgroundImage:
@@ -37,6 +37,6 @@ export default function NotFound() {
 					</Link>
 				</div>
 			</div>
-		</main>
+		</div>
 	);
 }

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import Kontakt from '../components/Kontakt';
 
 function selgbilendin() {
 	return (
@@ -8,11 +9,18 @@ function selgbilendin() {
 				<title>Auto GT | Selg bilen din</title>
 			</Head>
 
-			<div className="relative overflow-hidden bg-white py-16">
-				<div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
-					<div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
+			<div
+				className="relative overflow-hidden bg-white pt-16"
+				style={{
+					backgroundImage:
+						'url("http://www.transparenttextures.com/patterns/ag-square.png")',
+					backgroundColor: 'rgb(255, 255, 255, 0.4)',
+				}}
+			>
+				{/* <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
+					<div className="relative h-full mx-auto text-lg max-w-prose" aria-hidden="true">
 						<svg
-							className="absolute top-12 left-full translate-x-32 transform"
+							className="absolute transform translate-x-32 top-12 left-full"
 							width={404}
 							height={384}
 							fill="none"
@@ -44,7 +52,7 @@ function selgbilendin() {
 							/>
 						</svg>
 						<svg
-							className="absolute top-1/2 right-full -translate-x-32 -translate-y-1/2 transform"
+							className="absolute transform -translate-x-32 -translate-y-1/2 top-1/2 right-full"
 							width={404}
 							height={384}
 							fill="none"
@@ -76,7 +84,7 @@ function selgbilendin() {
 							/>
 						</svg>
 						<svg
-							className="absolute bottom-12 left-full translate-x-32 transform"
+							className="absolute transform translate-x-32 bottom-12 left-full"
 							width={404}
 							height={384}
 							fill="none"
@@ -107,75 +115,64 @@ function selgbilendin() {
 								fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)"
 							/>
 						</svg>
-					</div>
-				</div>
-				<div className="relative px-4 sm:px-6 lg:px-8">
+					</div> 
+				</div> */}
+				<div className="relative px-4 sm:px-6 lg:px-8 ">
 					<div className="mx-auto max-w-prose text-lg">
 						<h1>
-							<span className="block text-center text-lg font-semibold text-indigo-600">
+							{/* <span className="block text-lg font-semibold text-center text-indigo-600">
 								Vi hjelper deg!
-							</span>
+							</span> */}
 							<span className="mt-2 block text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-								Selg bilen din
+								Vi tilbyr
 							</span>
 						</h1>
-						<p className="mt-8 text-xl leading-8 text-gray-500">
-							Vi forstår at det å selge sin egen bil kan være tidskrevende, vanskelig
-							og iblant en ubehagelig prosess. Vi i{' '}
-							<span className="text-indigo-600">Auto GT</span> har ressursene,
-							ekspertisen og publikumet til å selge din bil på en effektiv og bryderi
-							fri måte. Vi bærer stolthet av å kunne beslutte raske avgjørelser og
-							tilby hurtige transaksjoner. Dette gir deg som kunde muligheten til å få
-							innsikt i bilens verdi på raskest mulig måte.
+						<p className="mt-8 text-xl leading-8 text-nardogrey">
+							Det å selge sin egen bil kan være tidskrevende, vanskelig og iblant en
+							ubehagelig prosess. Auto GT har ressursene, ekspertisen og publikumet
+							til å selge din bil på en effektiv og bryderi fri måte.
 						</p>
 					</div>
-					<div className="prose-lg prose prose-indigo mx-auto mt-6 text-gray-500">
-						<p>Vi tilbyr følgende i foretrukne rekkefølge:</p>
+					<div className="prose-lg prose prose-indigo mx-auto mt-6 text-nardogrey">
 						<ul role="list">
 							<li>
 								<p className="mx-2">
-									<span className="text-indigo-600">Innbytte. </span>
-									Vi er alltid glade for å kunne ta inn din bil der vi har
-									evaluert den opp mot verdien til en bil vi har i vårt inventar.
+									<span className="font-bold text-accent1">Innbytte</span> - Vi
+									kjøper din bil og verdien blir trukket fra kjøpesummen på bilen
+									du handler hos oss.
 								</p>
 							</li>
 							<li>
 								<p className="mx-2">
-									<span className="text-indigo-600">Vi kjøper din bil. </span>
-									Vi er meget interessert i å kunne kjøpe din velholdte bil
-									direkte av deg. For de rette bilene vil vi ikke nøle med
-									raskebeslutninger og effektiv sluttprosess. Her får du pengene
-									raskt på konto innen et par virkedager etter endt beslutning,
-									istedenfor å vente til bilen er solgt.{' '}
+									<span className="font-bold text-accent1">Rent kjøp</span> - Vi
+									kjøper din bil og pengene kommer raskt på konto.
 								</p>
 							</li>
 							<li>
 								<p className="mx-2">
-									<span className="text-indigo-600">
-										Kommisjon 30 000,- inkl. mva.{' '}
-									</span>
-									Her selger vi bilen i vårt navn og vi står med
-									reklamasjonsansvaret.{' '}
+									<span className="font-bold text-accent1">Kommisjon</span> - Vi
+									selger din bil i vårt navn.
 								</p>
 							</li>
 							<li>
 								<p className="mx-2">
-									<span className="text-indigo-600">
-										Formidling 20 000,- inkl. mva.{' '}
-									</span>
-									Her opptrer vi som mellommann og salget blir solgt i ditt navn.
-									Du er ansvarlig og reklamasjonsansvaret står på deg.
+									<span className="font-bold text-accent1">Formidling</span> - Vi
+									opptrer som mellommann, salget blir solgt i ditt navn og
+									reklamasjonsansvaret står på deg.
 								</p>
 							</li>
 						</ul>
-						<p>
-							Vi skreddersyr en avtale opp mot deg og ditt mål. Her har du tid og
-							tålmodighet til at pengene ikke er på konto før bilen er solgt. Vi
-							behandler kommisjons/formidlingsbiler på samme måte som våre egne biler,
-							derfor må de også være opp mot samme standard. Er bilen eldre og utenfor
-							garantiperiode kan det hende vi vil ha tilstandsrapport, dette kan vi
-							hjelpe med å få utført via våre kanaler.
+						<p className="mt-8 text-xl leading-8">
+							Skreddersydd avtale opp mot ditt mål. Biler til kommisjon og formidling
+							blir behandlet på samme måte som våre egne biler, derfor må de også være
+							opp mot samme standard. Er bilen eldre og utenfor garantiperiode kan det
+							hende vi vil ha tilstandsrapport, dette kan vi hjelpe med å få utført
+							via våre kanaler.
 						</p>
+					</div>
+
+					<div className="mb-5 pt-14">
+						<Kontakt />
 					</div>
 				</div>
 			</div>
