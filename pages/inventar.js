@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import { xml2json } from 'xml-js';
 
+// const xml2json = require('xml-js');
 const cheerio = require('cheerio');
 
 function nativeType(value) {
@@ -49,13 +50,42 @@ function inventar({ data }) {
 				<title>Auto GT | Inventar</title>
 			</Head>
 			{/* <h1 className="h-screen my-auto text-center text-7xl">IN DEVELOPMENT</h1> */}
-			<div className="inline max-w-xs">
+			<div className="mt-16 flex justify-center gap-5">
 				{/* {data.map((e) => (
 					<Image key={e.index} src={e} alt="Pic of car" width={2507} height={1672} />
 				))} */}
-				{data.map((e) => (
-					<div key={e.index}>{e.ANNONSE}</div>
-				))}
+				{data.map(({ ANNONSE }) => {
+					return (
+						<div key={ANNONSE.ID}>
+							<div className="max-w-sm overflow-hidden rounded bg-slate-100">
+								<Image
+									src={ANNONSE.BILDE[0].URL}
+									alt="Bilde av bilen"
+									width={2507}
+									height={1672}
+									objectFit="layout"
+								/>
+								<div className="flex flex-col gap-4 p-2">
+									<h3>
+										{ANNONSE.INFO.map(({ ID, LEDETEKST, VERDI }) => {
+											if (LEDETEKST == 'Merke') return VERDI;
+										})}{' '}
+										{ANNONSE.INFO.map(({ ID, LEDETEKST, VERDI }) => {
+											if (LEDETEKST == 'Modell') return VERDI;
+										})}
+										{' - '}
+										{ANNONSE.INFO.map(({ ID, LEDETEKST, VERDI }) => {
+											if (LEDETEKST == 'Variant') return VERDI;
+										})}
+									</h3>
+									<div>
+										<span>{ANNONSE.SALG.BELOP};-</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					);
+				})}
 			</div>
 		</>
 	);
@@ -66,19 +96,20 @@ export async function getStaticProps() {
 		'https://billink.no/page2_xml.php?kode=3baa6aaa-a8c2-4565-b6a4-4b4f4c33b5b0&butikk=agt&detaljert=1'
 	);
 	const xmlText = await res.text();
+
+	// console.log(jsonText);
+
 	const $ = cheerio.load(xmlText, { xmlMode: true });
 	let xml = $('BODY')
 		.children()
 		.map(function (i, el) {
 			let fXml = '<?xml?><ANNONSE>' + $(this).html() + '</ANNONSE>';
-
-			let json = xml2json(fXml, options);
-
+			let json = JSON.parse(xml2json(fXml, options));
 			return json;
 		})
 		.toArray();
 
-	console.log(xml[0].length);
+	// console.log(xml.length);
 	let data = xml;
 
 	// let data = xml2json(xml, { compact: true, spaces: 4 });

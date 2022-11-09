@@ -1,0 +1,637 @@
+{
+	"ID": 605280,
+	"NR": 2008,
+	"TYPE": "Bruktbil til salgs",
+	"STATUS": "Til salgs",
+	"OPPRETTET": "20221021 10:25:42",
+	"SIST_ENDRET": "20221106 23:23:12",
+	"FINN_KODE": 279315488,
+	"FINN": {
+		"KODE": 279315488,
+		"STATISTIKK_URL": "https%3A%2F%2Ffinn.no%2Feffekt%2F279315488%2F%3Ftoken%3DLBnYpn3jzTUzXjjlTjJXpo7asfiGGik74U7jF1oU7aw",
+		"DAGER": 10,
+		"VISNINGER": 249,
+		"EPOST_SENT": 319,
+		"EPOST_MOTTATT": 0
+	},
+	"KONTAKT": {
+		"NAVN": "Erlend Høyen",
+		"TELEFON": "464 82 654",
+		"EPOST": "erlend@autogt.no"
+	},
+	"SALG": { "BELOP": 390000, "OMREG": 4034 },
+	"INFO": [
+		{ "ID": 129, "LEDETEKST": "Årsmodell", "VERDI": 2017 },
+		{ "ID": 156, "LEDETEKST": "Kilometer", "VERDI": 97000 },
+		{ "ID": 123, "LEDETEKST": "Merke", "VERDI": "Volvo" },
+		{ "ID": 115, "LEDETEKST": "Modell", "VERDI": "XC 60" },
+		{
+			"ID": 160,
+			"LEDETEKST": "Variant",
+			"VERDI": "D4 2.4-215HK I Polestar Optimert I AWD I Utstyr++"
+		},
+		{ "ID": 144, "LEDETEKST": "Karosseri", "VERDI": "SUV/Offroad" },
+		{ "ID": 110, "LEDETEKST": "Avgiftsklasse", "VERDI": "Personbil" },
+		{ "ID": 158, "LEDETEKST": "Sylindervolum", "VERDI": 2400 },
+		{ "ID": 125, "LEDETEKST": "Effekt", "VERDI": 215 },
+		{ "ID": 111, "LEDETEKST": "Drivstoff", "VERDI": "Diesel" },
+		{ "ID": 118, "LEDETEKST": "Girkasse", "VERDI": "Automat" },
+		{ "ID": 159, "LEDETEKST": "Hjuldrift", "VERDI": "Firehjulsdrift" },
+		{ "ID": 126, "LEDETEKST": "Farge", "VERDI": "Hvit" },
+		{ "ID": 189, "LEDETEKST": "Interiørfarge", "VERDI": "Sort" },
+		{ "ID": 147, "LEDETEKST": "Antall seter", "VERDI": 5 },
+		{ "ID": 113, "LEDETEKST": "Antall dører", "VERDI": 4 },
+		{ "ID": 138, "LEDETEKST": "1. gang reg.", "VERDI": "30.12.2016" },
+		{ "ID": 198, "LEDETEKST": "Neste EU mnd", "VERDI": 3 },
+		{ "ID": 197, "LEDETEKST": "Neste EU år", "VERDI": 2024 },
+		{ "ID": 124, "LEDETEKST": "Garanti", "VERDI": "Fragus GOSafe Premium" },
+		{ "ID": 151, "LEDETEKST": "Garantivarighet", "VERDI": 12 },
+		{ "ID": 131, "LEDETEKST": "Garantilengde", "VERDI": 200000 },
+		{ "ID": 127, "LEDETEKST": "Co2-utslipp", "VERDI": 149 },
+		{ "ID": 132, "LEDETEKST": "Kjøretøyet står i", "VERDI": "Norge" },
+		{ "ID": 142, "LEDETEKST": "Reg. nr.", "VERDI": "LS87698" },
+		{ "ID": 194, "LEDETEKST": "Chassisnr", "VERDI": "YV1DZ87C6H2101311" },
+		{ "ID": 114, "LEDETEKST": "Servicehistorikk", "VERDI": "Ja" },
+		{ "ID": 824, "LEDETEKST": "Fulgt bilens serviceprogram", "VERDI": "Ja" },
+		{ "ID": 280, "LEDETEKST": "Totalvekt", "VERDI": 2505 },
+		{ "ID": 1008, "LEDETEKST": "Tilhengervekt B", "VERDI": 995 },
+		{ "ID": 278, "LEDETEKST": "Tilhengervekt BE", "VERDI": 2000 },
+		{ "ID": 379, "LEDETEKST": "Egenvekt", "VERDI": 1723 }
+	],
+	"BILDE": [
+		{
+			"NR": 1,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891aah11g5q8majqlso1k.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891aah11g5q8majqlso1k.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 2,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggniurhe1bdvp7q9ah77uo38b.jpeg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggniurhe1bdvp7q9ah77uo38b.jpeg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 3,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism897712lv11cu18il1l381l.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism897712lv11cu18il1l381l.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 4,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism8912pfl8911fn1ed81u1q1m.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism8912pfl8911fn1ed81u1q1m.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 5,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism8916db1grv1ekn1irbm0m1n.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism8916db1grv1ekn1irbm0m1n.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 6,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism8918rg14fn3m91u821t8l1o.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism8918rg14fn3m91u821t8l1o.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 7,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891l971iufvg61n4ltkt1p.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891l971iufvg61n4ltkt1p.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 8,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism8910hm1edlp077e91f8l1q.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism8910hm1edlp077e91f8l1q.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 9,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891fo61i3u1s4011ecbi51r.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891fo61i3u1s4011ecbi51r.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 10,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891fhg37k1pjn150jkgi1s.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891fhg37k1pjn150jkgi1s.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 11,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891nt9qdi1dq110v11u0c1t.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891nt9qdi1dq110v11u0c1t.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 12,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89177o10054ff3ta6kl1u.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89177o10054ff3ta6kl1u.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 13,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891blo1b5aps1bnn16dr1v.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891blo1b5aps1bnn16dr1v.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 14,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891qk11flq3tc6ge10bd20.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891qk11flq3tc6ge10bd20.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 15,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism8928e1i0eac75q4146e21.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism8928e1i0eac75q4146e21.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 16,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891f5p1rurqpm6pf198r22.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891f5p1rurqpm6pf198r22.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 17,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89b8i1g489gg13kq1g8e23.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89b8i1g489gg13kq1g8e23.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 18,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89slq1scei821sa8rhr24.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89slq1scei821sa8rhr24.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 19,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891pk96r55bcaom1jtm25.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891pk96r55bcaom1jtm25.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 20,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89qpine1196f1dq01ps026.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89qpine1196f1dq01ps026.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 21,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891hfq1dv51775apj9qq27.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891hfq1dv51775apj9qq27.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 22,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism8916h04fl1akd7f81usd28.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism8916h04fl1akd7f81usd28.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 23,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89155taq21pu21ubu1fep29.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89155taq21pu21ubu1fep29.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 24,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89ktpht81k01n4joah2a.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89ktpht81k01n4joah2a.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 25,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89183b1j5io5frro3672b.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89183b1j5io5frro3672b.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 26,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891625bu1n5j1pjmkje2c.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891625bu1n5j1pjmkje2c.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 27,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89jjt6lkm324rnsup2d.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89jjt6lkm324rnsup2d.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 28,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891oe1rs4ci31g3a1sf02e.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891oe1rs4ci31g3a1sf02e.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 29,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891otlhvc4cec1197i2f.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891otlhvc4cec1197i2f.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 30,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89v3r1sjlqrlookh5k2g.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89v3r1sjlqrlookh5k2g.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 31,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891kc4jvtpl29ql7fv2h.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891kc4jvtpl29ql7fv2h.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 32,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89gta4jf1aul1jof1f482i.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89gta4jf1aul1jof1f482i.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 33,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89kn51d9dod016e31ltm2j.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89kn51d9dod016e31ltm2j.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 34,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89sgndctklfon4m2a2k.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89sgndctklfon4m2a2k.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 35,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89b4crn290l150g1b9r2l.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89b4crn290l150g1b9r2l.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 36,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism899q217tbs29f841nm02m.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism899q217tbs29f841nm02m.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 37,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891hnmt2gadj1alatkd2n.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891hnmt2gadj1alatkd2n.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 38,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891v22e5f1u4j1n52sj2o.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891v22e5f1u4j1n52sj2o.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 39,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89rok1da6vqtvqm16p2p.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89rok1da6vqtvqm16p2p.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 40,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89178990oko3iu815kp2q.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89178990oko3iu815kp2q.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 41,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism891beae91ki8amcro12r.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism891beae91ki8amcro12r.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 42,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism8916pu1r2p1q261plobuo2s.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism8916pu1r2p1q261plobuo2s.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		},
+		{
+			"NR": 43,
+			"URL_THUMB": "https://billink3.blob.core.windows.net/blob5/image/2212/thumb/o_1ggnism89162dhr3k9m7q015m82t.jpg",
+			"URL": "https://billink3.blob.core.windows.net/blob5/image/2212/annonser/o_1ggnism89162dhr3k9m7q015m82t.jpg",
+			"VERSJON": "2022-10-31 23:54:27"
+		}
+	],
+	"UTSTYR": [
+		{
+			"ID": 133,
+			"KATEGORI": "Sikkerhet",
+			"NAVN": "ABS-bremser",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 119,
+			"KATEGORI": "Sikkerhet",
+			"NAVN": "Airbag foran",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 117,
+			"KATEGORI": "Sikkerhet",
+			"NAVN": "Airbag foran side",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 445,
+			"KATEGORI": "Sikkerhet",
+			"NAVN": "Alarm fabrikkmontert",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 169,
+			"KATEGORI": "Sikkerhet",
+			"NAVN": "Antiskrens (ESP)",
+			"VERDI": "Ja"
+		},
+		{ "ID": 162, "KATEGORI": "Sikkerhet", "NAVN": "Antispinn", "VERDI": "Ja" },
+		{
+			"ID": 413,
+			"KATEGORI": "Sikkerhet",
+			"NAVN": "Beltevarsler",
+			"VERDI": "Ja"
+		},
+		{ "ID": 382, "KATEGORI": "Sikkerhet", "NAVN": "Isofix", "VERDI": "Ja" },
+		{
+			"ID": 122,
+			"KATEGORI": "Sikkerhet",
+			"NAVN": "Startsperre",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 141,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Bagasjeromstrekk / hattehylle",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 163,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Interiør skinn",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 173,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Midtarmlene",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 450,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Pollenfilter",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 586,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Ratt oppvarmet",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 585,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Ratt regulerbart elektrisk m/ minne",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 434,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Ratt skinntrukket",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 374,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Sentrallås fjernstyrt",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 150,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Servostyring",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 176,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Sete elektrisk justerbart m/ minne",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 580,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Sete multifunktion",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 435,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Seter hel-skinn",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 582,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Seter nedfellbare bak",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 581,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Seter oppvarmet bak",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 112,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Seter oppvarmet foran",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 398,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Soltak panorama",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 1141,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Speil innfellbare elektriske",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 589,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Varmer forvarmer motor (drivstoff)",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 1136,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Varmer m/ app styring (drivstoff)",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 590,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Varmer m/ tidsur (drivstoff)",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 449,
+			"KATEGORI": "Komfort og interiør",
+			"NAVN": "Varmer restvarme",
+			"VERDI": "Ja"
+		},
+		{ "ID": 442, "KATEGORI": "Lyd og bilde", "NAVN": "AUX", "VERDI": "Ja" },
+		{
+			"ID": 376,
+			"KATEGORI": "Lyd og bilde",
+			"NAVN": "Bluetooth",
+			"VERDI": "Ja"
+		},
+		{ "ID": 394, "KATEGORI": "Lyd og bilde", "NAVN": "CD", "VERDI": "Ja" },
+		{
+			"ID": 185,
+			"KATEGORI": "Lyd og bilde",
+			"NAVN": "Navigasjonssystem",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 472,
+			"KATEGORI": "Lyd og bilde",
+			"NAVN": "Radio DAB+",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 692,
+			"KATEGORI": "Lyd og bilde",
+			"NAVN": "Radio FM",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 168,
+			"KATEGORI": "Lyd og bilde",
+			"NAVN": "Ratt multifunksjon",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 369,
+			"KATEGORI": "Lyd og bilde",
+			"NAVN": "Ryggekamera",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 191,
+			"KATEGORI": "Lyd og bilde",
+			"NAVN": "Telefon handsfree-opplegg",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 281,
+			"KATEGORI": "Lyd og bilde",
+			"NAVN": "Telefon original integrert",
+			"VERDI": "Ja"
+		},
+		{ "ID": 459, "KATEGORI": "Lyd og bilde", "NAVN": "USB", "VERDI": "Ja" },
+		{
+			"ID": 724,
+			"KATEGORI": "Teknikk og miljø",
+			"NAVN": "Bakluke elektrisk",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 577,
+			"KATEGORI": "Teknikk og miljø",
+			"NAVN": "Cruise Controll adaptive",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 167,
+			"KATEGORI": "Teknikk og miljø",
+			"NAVN": "Diesel-partikkelfilter",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 572,
+			"KATEGORI": "Teknikk og miljø",
+			"NAVN": "Klimaanlegg 2-soner",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 269,
+			"KATEGORI": "Teknikk og miljø",
+			"NAVN": "Lys Xenon",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 166,
+			"KATEGORI": "Teknikk og miljø",
+			"NAVN": "Parkeringsensor bak",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 188,
+			"KATEGORI": "Teknikk og miljø",
+			"NAVN": "Parkeringsensor foran",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 164,
+			"KATEGORI": "Teknikk og miljø",
+			"NAVN": "Regnsensor",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 438,
+			"KATEGORI": "Teknikk og miljø",
+			"NAVN": "Turteller",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 365,
+			"KATEGORI": "Teknikk og miljø",
+			"NAVN": "Tåkelys",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 152,
+			"KATEGORI": "Eksteriør",
+			"NAVN": "Felg lettmet. sommer",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 172,
+			"KATEGORI": "Eksteriør",
+			"NAVN": "Felg lettmet. vinter",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 190,
+			"KATEGORI": "Eksteriør",
+			"NAVN": "Hengerfeste avtagbart",
+			"VERDI": "Ja"
+		},
+		{
+			"ID": 427,
+			"KATEGORI": "Eksteriør",
+			"NAVN": "Lakkerte utvendige speil",
+			"VERDI": "Ja"
+		},
+		{ "ID": 175, "KATEGORI": "Eksteriør", "NAVN": "Sommerdekk", "VERDI": "Ja" },
+		{ "ID": 136, "KATEGORI": "Eksteriør", "NAVN": "Vinterdekk", "VERDI": "Ja" },
+		{
+			"KATEGORI": "Modell spess.",
+			"NAVN": "Koppholdere fram og bak",
+			"VERDI": "Ja"
+		}
+	],
+	"BESKRIVELSE": "<strong>Vi i Auto GT har gleden av å tilby en godt utstyrt XC60 SUV med lav km <br /><br /></strong>Flott eksemplar i hvit med svart skinn interiør!<br /><br />Motor optimering av selveste Polestar til 215 HK som bidrar til ekstra ytelse og et gjerrig drivstoff forbruk.  <br /><br />Her får du en trygg SUV med høy bakkeklaring, gode trekkvogns egenskaper og et intelligent AWD system som tar deg frem under all slags føre og forhold! <br /><br />Pen i utseende som gjør seg like godt i byen, som ute på landet på vei opp til fjellet der den kombinerer egenskapene robusthet og særdeles høy kjørekomfort! <br /><br /> <br /><br />Utstyr verdt å nevne: <strong><br /><br /></strong>- Polestar optimert motor til 215 hk<br /><br />- Varme i ratt, framseter og bakseter <br /><br />- Lane depart warning <br /><br />- Navi <br /><br />- HIFI <br /><br />- Adaptiv cruisekontroll<br /><br />- Panorama glasstak<br /><br />- Elektrisk justering av førersete med minne<br /><br />- Dieselvarmer via Volvo app <br /><br />- Avtagbart hengerfeste <br /><br />- Ryggekamera<br /><br />- Parkeringssensor foran og bak<br /><br /><br /><br />Neste EU kontroll: <br />08.03.2024<br /><br />Sist service: <br />91 354km <br /><br />Garanti: <br />12 mnd / 200 000km <br /><br />Nye sommerdekk <br />Gode vinterdekk piggfritt<br /><br />",
+	"VIS_FASTTEKST": 1
+}

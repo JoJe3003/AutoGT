@@ -37,53 +37,45 @@ export default function Alphanav() {
 								</div>
 								<div className="hidden sm:ml-6 sm:flex sm:space-x-8">
 									{/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-									<Link href="/om-oss">
-										<a
-											href="#"
-											className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
-												path === '/om-oss'
-													? 'border-accent1'
-													: 'border-transparent hover:border-gray-300 hover:text-gray-700'
-											}`}
-										>
-											Om oss
-										</a>
+									<Link
+										href="/om-oss"
+										className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
+											path === '/om-oss'
+												? 'border-accent1'
+												: 'border-transparent hover:border-gray-300 hover:text-gray-700'
+										}`}
+									>
+										Om oss
 									</Link>
-									<Link href="/inventar">
-										<a
-											href="#"
-											className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
-												path === '/inventar'
-													? 'border-accent1'
-													: 'border-transparent hover:border-gray-300 hover:text-gray-700'
-											}`}
-										>
-											Inventar
-										</a>
+									<Link
+										href="/inventar"
+										className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
+											path === '/inventar'
+												? 'border-accent1'
+												: 'border-transparent hover:border-gray-300 hover:text-gray-700'
+										}`}
+									>
+										Inventar
 									</Link>
-									<Link href="/selg-bilen-din">
-										<a
-											href="#"
-											className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
-												path === '/selg-bilen-din'
-													? 'border-accent1'
-													: 'border-transparent hover:border-gray-300 hover:text-gray-700'
-											}`}
-										>
-											Selg bilen din
-										</a>
+									<Link
+										href="/selg-bilen-din"
+										className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
+											path === '/selg-bilen-din'
+												? 'border-accent1'
+												: 'border-transparent hover:border-gray-300 hover:text-gray-700'
+										}`}
+									>
+										Selg bilen din
 									</Link>
-									<Link href="/kontakt">
-										<a
-											href="#"
-											className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
-												path === '/kontakt'
-													? 'border-accent1'
-													: 'border-transparent hover:border-gray-300 hover:text-gray-700'
-											}`}
-										>
-											Kontakt oss
-										</a>
+									<Link
+										href="/kontakt"
+										className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
+											path === '/kontakt'
+												? 'border-accent1'
+												: 'border-transparent hover:border-gray-300 hover:text-gray-700'
+										}`}
+									>
+										Kontakt oss
 									</Link>
 								</div>
 							</div>
