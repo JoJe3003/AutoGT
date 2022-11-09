@@ -9,13 +9,15 @@ export default function Introduction2() {
 			name: 'Endre Holmdal',
 			role: 'Daglig Leder & Eier',
 			imageUrl: profilEndre,
-			bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsa ullam quia repellendus a nemo, magnam facilis voluptas tenetur neque dignissimos cum error optio reprehenderit et? Mollitia vitae ratione deleniti. ',
+			egenskaper: 'Høytytende problemløser og datakyndig.',
+			interesser: 'Motorsport og fotografi.',
 		},
 		{
 			name: 'Erlend Høyen',
 			role: 'Eier',
 			imageUrl: profilErlend,
-			bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsa ullam quia repellendus a nemo, magnam facilis voluptas tenetur neque dignissimos cum error optio reprehenderit et? Mollitia vitae ratione deleniti. ',
+			egenskaper: 'Upåklagelig moral og detalorienter.',
+			interesser: 'Motorsport og lidenskapelig opptatt av bil.',
 		},
 	];
 
@@ -43,14 +45,23 @@ export default function Introduction2() {
 											objectFit="cover"
 										/>
 									</div>
-									<div className="sm:col-span-2">
-										<div className="space-y-4">
+									<div className="relative sm:col-span-2">
+										<div className="inline space-y-4 sm:absolute sm:bottom-[10%] lg:bottom-0">
 											<div className="space-y-1 text-lg font-medium leading-6">
 												<h3>{person.name}</h3>
 												<p className="text-accent1">{person.role}</p>
 											</div>
-											<div className="text-lg">
-												<p className="text-gray-500">{person.bio}</p>
+											<div>
+												<div className="text-lg">
+													<p className="text-gray-500">
+														Egenskaper: {person.egenskaper}
+													</p>
+												</div>
+												<div className="text-lg">
+													<p className="text-gray-500">
+														Interesser: {person.interesser}
+													</p>
+												</div>
 											</div>
 										</div>
 									</div>

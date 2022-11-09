@@ -8,22 +8,12 @@ import heroimg from '/public/static/hero25.webp';
 import { NavLinks } from '../components/Navlinks';
 
 export default function Home() {
-	const [loading, setLoading] = useState(false);
-
-	useEffect(() => {
-		setLoading(true);
-		setTimeout(() => {
-			setLoading(false);
-		}, 2000);
-	}, []);
-
 	return (
 		<>
 			<Script async src="https://cdn.splitbee.io/sb.js" />
 			<Head>
 				<title>Auto GT</title>
 			</Head>
-			{loading ? <Webloader /> : null}
 
 			{/* Hero */}
 			<div className="px-30 relative flex w-full items-center justify-center bg-background object-center py-0">

@@ -16,7 +16,7 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 
 export default function Example() {
 	return (
-		<div className="relative bg-white">
+		<div className="relative overflow-hidden rounded-lg bg-white">
 			<div className="absolute inset-0">
 				<div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
 			</div>
@@ -27,7 +27,7 @@ export default function Example() {
 							Ta kontakt
 						</h2>
 						<p className="mt-3 text-lg leading-6 text-gray-500">
-							Dersom et av alternativene over er av interrese, gjerne send oss en
+							Dersom et av alternativene over er av interrese, send oss gjerne en
 							melding så vi kan følge opp med en hyggelig bilprat.
 						</p>
 						<dl className="mt-8 text-base text-gray-500">

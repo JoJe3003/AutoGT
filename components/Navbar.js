@@ -55,7 +55,7 @@ export default function Alphanav() {
 												: 'border-transparent hover:border-gray-300 hover:text-gray-700'
 										}`}
 									>
-										Inventar
+										Våre biler
 									</Link>
 									<Link
 										href="/selg-bilen-din"
@@ -65,7 +65,7 @@ export default function Alphanav() {
 												: 'border-transparent hover:border-gray-300 hover:text-gray-700'
 										}`}
 									>
-										Selg bilen din
+										Vi tilbyr
 									</Link>
 									<Link
 										href="/kontakt"
@@ -132,7 +132,7 @@ export default function Alphanav() {
 												: 'border-l-4 border-transparent text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'
 										}`}
 									>
-										Inventar
+										Våre biler
 									</Disclosure.Button>
 								</Link>
 								<Link href="/selg-bilen-din">
@@ -145,7 +145,7 @@ export default function Alphanav() {
 												: 'border-l-4 border-transparent text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'
 										}`}
 									>
-										Selg bilen din
+										Vi tilbyr
 									</Disclosure.Button>
 								</Link>
 								<Link href="/kontakt">
