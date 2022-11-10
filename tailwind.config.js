@@ -26,6 +26,9 @@ module.exports = {
 				loadFadeIn: 'loadFadeIn 1s ease-in-out forwards',
 				loadRemove: 'loadRemove 2s linear forwards',
 			},
+			screens: {
+				betterhover: { raw: '(hover: hover)' },
+			},
 		},
 	},
 	plugins: [
