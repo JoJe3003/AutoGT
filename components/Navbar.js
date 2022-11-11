@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
@@ -18,7 +18,7 @@ export default function Alphanav() {
 	const path = router.asPath;
 
 	return (
-		<Disclosure as="nav" className="bg-white">
+		<Disclosure as="nav" className="border bg-white">
 			{({ open }) => (
 				<>
 					<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

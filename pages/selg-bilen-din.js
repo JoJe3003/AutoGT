@@ -144,7 +144,7 @@ function selgbilendin() {
 							</li>
 							<li>
 								<p className="mx-2">
-									<span className="font-bold text-accent1">Rent kjøp</span> - Vi
+									<span className="font-bold text-accent1">Innkjøp</span> - Vi
 									kjøper din bil og pengene kommer raskt på konto.
 								</p>
 							</li>
