@@ -1,15 +1,30 @@
 import { useState } from 'react';
-import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+import { Disclosure, Transition } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 import logosrc from '../public/AutoGT.png';
 
-function classNames(...classes) {
-	return classes.filter(Boolean).join(' ');
-}
+const links = [
+	{
+		name: 'Om oss',
+		href: '/om-oss',
+	},
+	{
+		name: 'Våre biler',
+		href: '/inventar',
+	},
+	{
+		name: 'Vi tilbyr',
+		href: '/selg-bilen-din',
+	},
+	{
+		name: 'Kontakt oss',
+		href: '/kontakt',
+	},
+];
 
 export default function Alphanav() {
 	const [isShowing, setIsShowing] = useState(false);
@@ -21,11 +36,12 @@ export default function Alphanav() {
 		<Disclosure as="nav" className="border bg-white">
 			{({ open }) => (
 				<>
+					{/* HEADER */}
 					<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 						<div className="flex h-16 justify-between">
 							<div className="flex w-full justify-between">
 								<div className="flex flex-shrink-0 items-center">
-									<div className="flex max-w-[120px] flex-shrink-0 items-center justify-center">
+									<div className="flex max-w-[120px] items-center justify-center">
 										<Link href="/">
 											<Image
 												src={logosrc}
@@ -36,55 +52,26 @@ export default function Alphanav() {
 									</div>
 								</div>
 								<div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-									{/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-									<Link
-										href="/om-oss"
-										className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
-											path === '/om-oss'
-												? 'border-accent1'
-												: 'border-transparent hover:border-gray-300 hover:text-gray-700'
-										}`}
-									>
-										Om oss
-									</Link>
-									<Link
-										href="/inventar"
-										className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
-											path === '/inventar'
-												? 'border-accent1'
-												: 'border-transparent hover:border-gray-300 hover:text-gray-700'
-										}`}
-									>
-										Våre biler
-									</Link>
-									<Link
-										href="/selg-bilen-din"
-										className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
-											path === '/selg-bilen-din'
-												? 'border-accent1'
-												: 'border-transparent hover:border-gray-300 hover:text-gray-700'
-										}`}
-									>
-										Vi tilbyr
-									</Link>
-									<Link
-										href="/kontakt"
-										className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 ${
-											path === '/kontakt'
-												? 'border-accent1'
-												: 'border-transparent hover:border-gray-300 hover:text-gray-700'
-										}`}
-									>
-										Kontakt oss
-									</Link>
+									{links.map((link, index) => (
+										<Link
+											key={index}
+											href={link.href}
+											className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-700 hover:text-red-400 ${
+												path === link.href
+													? 'border-accent1'
+													: 'border-transparent hover:border-gray-300 hover:text-gray-700'
+											}`}
+										>
+											{link.name}
+										</Link>
+									))}
 								</div>
 							</div>
-
 							<div className="-mr-2 flex items-center sm:hidden">
 								{/* Mobile menu button */}
 								<Disclosure.Button
 									onClick={() => setIsShowing((isShowing) => !isShowing)}
-									className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+									className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
 								>
 									<span className="sr-only">Open main menu</span>
 									{open ? (
@@ -99,7 +86,7 @@ export default function Alphanav() {
 
 					<Transition
 						show={isShowing}
-						enter="transition-opacity duration-75"
+						enter="transition-opacity duration-150"
 						enterFrom="opacity-0"
 						enterTo="opacity-100"
 						leave="transition-opacity duration-150"
@@ -108,59 +95,20 @@ export default function Alphanav() {
 					>
 						<Disclosure.Panel className="sm:hidden">
 							<div className="space-y-1 pt-2 pb-3">
-								{/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
-								<Link href="/om-oss">
-									<Disclosure.Button
-										as="a"
-										href="#"
-										className={`block py-2 pl-3 pr-4 text-base font-medium ${
-											path === '/om-oss'
-												? 'border-l-4 border-indigo-500 bg-indigo-50 text-indigo-700'
-												: 'border-l-4 border-transparent text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'
-										}`}
-									>
-										Om oss
-									</Disclosure.Button>
-								</Link>
-								<Link href="/inventar">
-									<Disclosure.Button
-										as="a"
-										href="#"
-										className={`block py-2 pl-3 pr-4 text-base font-medium ${
-											path === '/inventar'
-												? 'border-l-4 border-indigo-500 bg-indigo-50 text-indigo-700'
-												: 'border-l-4 border-transparent text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'
-										}`}
-									>
-										Våre biler
-									</Disclosure.Button>
-								</Link>
-								<Link href="/selg-bilen-din">
-									<Disclosure.Button
-										as="a"
-										href="#"
-										className={`block py-2 pl-3 pr-4 text-base font-medium ${
-											path === '/selg-bilen-din'
-												? 'border-l-4 border-indigo-500 bg-indigo-50 text-indigo-700'
-												: 'border-l-4 border-transparent text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'
-										}`}
-									>
-										Vi tilbyr
-									</Disclosure.Button>
-								</Link>
-								<Link href="/kontakt">
-									<Disclosure.Button
-										as="a"
-										href="#"
-										className={`block py-2 pl-3 pr-4 text-base font-medium ${
-											path === '/kontakt'
-												? 'border-l-4 border-indigo-500 bg-indigo-50 text-indigo-700'
-												: 'border-l-4 border-transparent text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'
-										}`}
-									>
-										Kontakt oss
-									</Disclosure.Button>
-								</Link>
+								{links.map((link, index) => (
+									<Link key={index} href={link.href}>
+										<Disclosure.Button
+											as="a"
+											className={`block py-2 pl-3 pr-4 text-base font-medium ${
+												path === link.href
+													? 'border-l-4 border-indigo-500 bg-indigo-50 text-indigo-700'
+													: 'border-l-4 border-transparent text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'
+											}`}
+										>
+											{link.name}
+										</Disclosure.Button>
+									</Link>
+								))}
 							</div>
 						</Disclosure.Panel>
 					</Transition>
