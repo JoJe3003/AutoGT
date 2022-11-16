@@ -92,7 +92,7 @@ function inventar({ data }) {
 												objectFit="layout"
 												width={5014}
 												height={3344}
-												className="h-full w-full object-cover object-center group-hover:opacity-75"
+												className="h-full w-full object-cover object-center group-hover:opacity-100"
 											/>
 										</div>
 										<div className="mt-4 flex items-center justify-between gap-4 text-base font-medium text-gray-900">
