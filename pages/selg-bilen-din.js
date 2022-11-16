@@ -14,7 +14,7 @@ function selgbilendin() {
 				style={{
 					backgroundImage:
 						'url("http://www.transparenttextures.com/patterns/ag-square.png")',
-					backgroundColor: 'rgb(225, 225, 225, 0.6)',
+					backgroundColor: 'rgb(255, 255, 255, 0.3)',
 				}}
 			>
 				{/* <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">

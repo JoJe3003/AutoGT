@@ -1,22 +1,25 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import { useState } from 'react';
 
 export default function Example() {
+	const [fullname, setFullname] = useState('');
+	const [email, setEmail] = useState('');
+	const [phone, setPhone] = useState('');
+	const [message, setMessage] = useState('');
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		const data = {
+			fullname,
+			email,
+			phone,
+			message,
+		};
+		console.log(data);
+	};
+
 	return (
-		<div className="relative overflow-hidden rounded-lg bg-white">
+		<div className="relative overflow-hidden rounded-lg bg-white shadow">
 			<div className="absolute inset-0">
 				<div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
 			</div>
@@ -114,7 +117,12 @@ export default function Example() {
 				</div>
 				<div className="bg-white px-4 py-16 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
 					<div className="mx-auto max-w-lg lg:max-w-none">
-						<form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+						<form
+							onSubmit={handleSubmit}
+							action="#"
+							method="POST"
+							className="grid grid-cols-1 gap-y-6"
+						>
 							<div>
 								<label htmlFor="full-name" className="sr-only">
 									Fullt navn
@@ -126,6 +134,10 @@ export default function Example() {
 									autoComplete="name"
 									className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
 									placeholder="Fullt navn"
+									value={fullname}
+									onChange={(e) => {
+										setFullname(e.target.value);
+									}}
 								/>
 							</div>
 							<div>
@@ -139,6 +151,10 @@ export default function Example() {
 									autoComplete="email"
 									className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
 									placeholder="Epost"
+									value={email}
+									onChange={(e) => {
+										setEmail(e.target.value);
+									}}
 								/>
 							</div>
 							<div>
@@ -152,6 +168,10 @@ export default function Example() {
 									autoComplete="tel"
 									className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
 									placeholder="Telefon"
+									value={phone}
+									onChange={(e) => {
+										setPhone(e.target.value);
+									}}
 								/>
 							</div>
 							<div>
@@ -165,6 +185,10 @@ export default function Example() {
 									className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
 									placeholder="Melding"
 									defaultValue={''}
+									value={message}
+									onChange={(e) => {
+										setMessage(e.target.value);
+									}}
 								/>
 							</div>
 							<div>

@@ -3,11 +3,14 @@ import React from 'react';
 import Logo from '../public/AutoGT.png';
 
 function Webloader() {
-	setInterval(() => {}, 5000);
-
 	return (
-		<div className="absolute top-0 z-50 flex items-center justify-center w-full h-screen overflow-hidden bg-white select-none animate-loadRemove">
-			<div className="max-w-[15rem] opacity-100 animate-loadFadeIn forwards hover:opacity-100 duration-1000">
+		// <div className="absolute top-0 z-50 flex h-screen w-full select-none items-center justify-center overflow-hidden bg-gray-400">
+		// 	<div className="forwards max-w-[15rem]">
+		// 		<Image src={Logo} alt="Website logo displayed as loading screen" />
+		// 	</div>
+		// </div>
+		<div className="absolute top-0 z-50 flex h-screen w-full animate-loadRemove select-none items-center justify-center overflow-hidden bg-white">
+			<div className="forwards max-w-[15rem] animate-loadFadeIn opacity-100 duration-1000 hover:opacity-100">
 				<Image src={Logo} alt="Website logo displayed as loading screen" />
 			</div>
 		</div>
