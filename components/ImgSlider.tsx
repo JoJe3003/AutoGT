@@ -39,7 +39,9 @@ const swipePower = (offset: number, velocity: number) => {
 export const ImgSlider = ({ imageArr }) => {
 	const [[page, direction], setPage] = useState([0, 0]);
 
-	const images = imageArr;
+	const images = imageArr.splice(0, 1);
+
+	console.log(images);
 	// We only have 3 images, but we paginate them absolutely (ie 1, 2, 3, 4, 5...) and
 	// then wrap that within 0-2 to find our image ID in the array below. By passing an
 	// absolute page index as the `motion` component's `key` prop, `AnimatePresence` will
@@ -84,17 +86,18 @@ export const ImgSlider = ({ imageArr }) => {
 						width={5014}
 						height={3344}
 						className="absolute w-screen"
+						draggable
 					/>
 				</motion.div>
 			</AnimatePresence>
 			<div
-				className="absolute right-3 z-20 flex h-8 w-8 cursor-pointer select-none items-center justify-center rounded-full bg-white text-lg font-bold"
+				className="absolute right-0 top-1/2 z-20 flex h-8 w-8 cursor-pointer select-none items-center justify-center rounded-full bg-white text-lg font-bold"
 				onClick={() => paginate(1)}
 			>
 				NEXT
 			</div>
 			<div
-				className="absolute left-3 z-20 flex h-8 w-8 scale-[-1] transform cursor-pointer select-none items-center justify-center rounded-full bg-white text-lg font-bold"
+				className="absolute left-0 top-1/2 z-20 flex h-8 w-8 scale-[-1] transform cursor-pointer select-none items-center justify-center rounded-full bg-white text-lg font-bold"
 				onClick={() => paginate(-1)}
 			>
 				PREV
