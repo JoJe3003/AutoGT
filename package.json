@@ -1,5 +1,12 @@
 {
 	"name": "auto-gt-website",
+	"quokka": {
+		"babel": {
+			"presets": [
+				"react-app"
+			]
+		}
+	},
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
@@ -26,10 +33,12 @@
 		"xml2js": "^0.4.23"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.20.2",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@tailwindcss/forms": "^0.5.3",
 		"@tailwindcss/typography": "^0.5.7",
 		"autoprefixer": "^10.4.12",
+		"babel-preset-react-app": "^10.0.1",
 		"cwebp": "^2.0.5",
 		"eslint": "8.26.0",
 		"eslint-config-next": "^13.0.2",
