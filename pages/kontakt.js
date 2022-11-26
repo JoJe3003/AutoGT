@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import Gridtest from '../components/gridtest';
 
 function kontakt() {
 	return (
@@ -7,7 +8,7 @@ function kontakt() {
 			<Head>
 				<title>Auto GT | Kontakt</title>
 			</Head>
-			<div>Kontakt</div>;
+			<Gridtest />
 		</>
 	);
 }
