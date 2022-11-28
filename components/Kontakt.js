@@ -48,23 +48,43 @@ export default function Example() {
 
 		let isValidForm = handleValidation();
 
-		const res = await fetch('/api/sendgrid', {
-			body: JSON.stringify({
-				fullname: fullname,
-				email: email,
-				phone: phone,
-				message: message,
-			}),
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			method: 'POST',
-		});
+		if (isValidForm) {
+			setButtonText('Sender...');
+			const res = await fetch('/api/sendgrid', {
+				body: JSON.stringify({
+					fullname: fullname,
+					email: email,
+					phone: phone,
+					message: message,
+				}),
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				method: 'POST',
+			});
 
-		const { error } = await res.json();
-		if (error) {
-			console.log(error);
-			return;
+			const { error } = await res.json();
+			if (error) {
+				console.log(error);
+				setShowSuccessMessage(false);
+				setShowFailureMessage(true);
+				setButtonText('Send');
+
+				// Reset form fields
+				setFullname('');
+				setEmail('');
+				setPhone('');
+				setMessage('');
+				return;
+			}
+			setShowSuccessMessage(true);
+			setShowFailureMessage(false);
+			setButtonText('Send');
+			// Reset form fields
+			setFullname('');
+			setEmail('');
+			setPhone('');
+			setMessage('');
 		}
 		console.log(fullname, email, phone, message);
 	};
@@ -185,6 +205,9 @@ export default function Example() {
 										setFullname(e.target.value);
 									}}
 								/>
+								{errors?.fullname && (
+									<p className="text-red-500">Dette feltet kan ikke være tomt.</p>
+								)}
 							</div>
 							<div>
 								<label htmlFor="email" className="sr-only">
@@ -202,6 +225,9 @@ export default function Example() {
 										setEmail(e.target.value);
 									}}
 								/>
+								{errors?.email && (
+									<p className="text-red-500">Dette feltet kan ikke være tomt.</p>
+								)}
 							</div>
 							<div>
 								<label htmlFor="phone" className="sr-only">
@@ -219,6 +245,9 @@ export default function Example() {
 										setPhone(e.target.value);
 									}}
 								/>
+								{errors?.phone && (
+									<p className="text-red-500">Dette feltet kan ikke være tomt.</p>
+								)}
 							</div>
 							<div>
 								<label htmlFor="message" className="sr-only">
@@ -236,14 +265,29 @@ export default function Example() {
 										setMessage(e.target.value);
 									}}
 								/>
+								{errors?.message && (
+									<p className="text-red-500">Dette feltet kan ikke være tomt.</p>
+								)}
 							</div>
 							<div>
 								<button
 									type="submit"
 									className="inline-flex justify-center rounded-md border border-transparent bg-accent1 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
 								>
-									Send
+									{buttonText}
 								</button>
+							</div>
+							<div className="text-left">
+								{showSuccessMessage && (
+									<p className="my-2 text-sm font-semibold text-green-500">
+										Takk! Meldingen din er nå sendt til oss.
+									</p>
+								)}
+								{showFailureMessage && (
+									<p className="text-red-500">
+										Oops! Her gikk noe galt, vennligst prøv igjen.
+									</p>
+								)}
 							</div>
 						</form>
 					</div>

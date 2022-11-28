@@ -72,28 +72,27 @@ function inventar({ data }) {
 							});
 
 							return (
-								<div
+								<a
 									key={ANNONSE.ID}
 									href={`https://www.finn.no/car/used/ad.html?finnkode=${ANNONSE.FINN_KODE}`}
 									className="group"
 								>
 									<div>
-										<div className="aspect-w-2 aspect-h-1 w-full rounded-lg sm:aspect-w-3 sm:aspect-h-2">
-											<div className="relative flex h-full w-full">
+										<div className="aspect-w-2 aspect-h-1 w-full overflow-hidden rounded-t-lg sm:aspect-w-3 sm:aspect-h-2">
+											{/* <div className="relative flex h-full w-full">
 												<ImgSlider imageArr={imgToArr} />
-											</div>
-											{/* <Image
+											</div> */}
+											<Image
 												src={
 													ANNONSE.BILDE.length
 														? ANNONSE.BILDE[0].URL
 														: ANNONSE.BILDE.URL
 												}
 												alt="Bilde av bil"
-												objectFit="layout"
 												width={5014}
 												height={3344}
 												className="h-full w-full object-cover object-center group-hover:opacity-100"
-											/> */}
+											/>
 										</div>
 										<div className="mt-4 flex items-center justify-between gap-4 text-base font-medium text-gray-900">
 											<h3>
@@ -123,7 +122,7 @@ function inventar({ data }) {
 											{bilInfo.get('Årsmodell')}
 										</p>
 									</div>
-								</div>
+								</a>
 							);
 						})}
 					</div>
