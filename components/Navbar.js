@@ -18,11 +18,11 @@ const links = [
 	},
 	{
 		name: 'Vi tilbyr',
-		href: '/selg-bilen-din',
+		href: '/vi-tilbyr',
 	},
 	{
 		name: 'Kontakt oss',
-		href: '/kontakt',
+		href: '/kontakt-oss',
 	},
 ];
 
@@ -36,7 +36,7 @@ export default function Alphanav() {
 		<Disclosure as="nav" className="border bg-white">
 			<>
 				{/* HEADER */}
-				<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+				<div className="mx-auto max-w-full px-4 sm:px-6 lg:px-8">
 					<div className="flex h-16 justify-between">
 						<div className="flex w-full justify-between">
 							<div className="flex flex-shrink-0 items-center">

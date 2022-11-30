@@ -3,13 +3,13 @@ import Gmaps from './Gmaps';
 
 export default function Location() {
 	return (
-		<div className="pb-2">
+		<div className="pb-0">
 			<div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-24">
-				<h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Vår lokasjon</h2>
+				{/* <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Vår lokasjon</h2> */}
 				<div className="mx-auto lg:max-w-7xl lg:px-0">
 					{/* Main 3 column grid */}
-					<div className="grid grid-cols-1 items-start gap-4 py-6 lg:grid-cols-3 lg:gap-8">
-						{/* Left column */}
+					<div className="py-6">
+						{/* Left column
 						<div className="my-auto grid grid-cols-1 gap-4 lg:col-span-2">
 							<section aria-labelledby="section-1-title">
 								<h2 className="sr-only" id="section-1-title">
@@ -36,10 +36,10 @@ export default function Location() {
 									</div>
 								</div>
 							</section>
-						</div>
+						</div> */}
 
 						{/* Right column */}
-						<div className="grid grid-cols-1 gap-4 lg:-mt-20">
+						<div className="lg:-mt-20">
 							<section aria-labelledby="section-2-title">
 								<h2 className="sr-only" id="section-2-title">
 									Kart til Auto GT.

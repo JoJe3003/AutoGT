@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import Kontakt from '../components/Kontakt';
 
-function selgbilendin() {
+function vitilbyr() {
 	return (
 		<>
 			<Head>
@@ -180,4 +180,4 @@ function selgbilendin() {
 	);
 }
 
-export default selgbilendin;
+export default vitilbyr;

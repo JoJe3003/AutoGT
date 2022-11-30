@@ -90,40 +90,6 @@ export const ImgSlider = ({ imageArr }) => {
 					/>
 				</motion.div>
 			</AnimatePresence>
-			<div
-				className="absolute right-0 top-1/2 z-20 flex h-8 w-8 cursor-pointer select-none items-center justify-center rounded-full bg-white text-lg font-bold"
-				onClick={() => paginate(1)}
-			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="2em"
-					height="2em"
-					preserveAspectRatio="xMidYMid meet"
-					viewBox="0 0 24 24"
-				>
-					<path
-						fill="currentColor"
-						d="M7.15 21.1q-.375-.375-.375-.888q0-.512.375-.887L14.475 12l-7.35-7.35q-.35-.35-.35-.875t.375-.9q.375-.375.888-.375q.512 0 .887.375l8.4 8.425q.15.15.213.325q.062.175.062.375t-.062.375q-.063.175-.213.325L8.9 21.125q-.35.35-.862.35q-.513 0-.888-.375Z"
-					/>
-				</svg>
-			</div>
-			<div
-				className="absolute left-0 top-1/2 z-20 flex h-8 w-8 scale-[-1] transform cursor-pointer select-none items-center justify-center rounded-full bg-white text-lg font-bold"
-				onClick={() => paginate(-1)}
-			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="2em"
-					height="2em"
-					preserveAspectRatio="xMidYMid meet"
-					viewBox="0 0 24 24"
-				>
-					<path
-						fill="currentColor"
-						d="M9.125 21.1L.7 12.7q-.15-.15-.212-.325Q.425 12.2.425 12t.063-.375Q.55 11.45.7 11.3l8.425-8.425q.35-.35.875-.35t.9.375q.375.375.375.875t-.375.875L3.55 12l7.35 7.35q.35.35.35.862q0 .513-.375.888t-.875.375q-.5 0-.875-.375Z"
-					/>
-				</svg>
-			</div>
 		</>
 	);
 };

@@ -132,7 +132,7 @@ export default function Example() {
 										className="h-6 w-6 flex-shrink-0 text-gray-400"
 										aria-hidden="true"
 									/>
-									<span className="ml-3">endre@autogt.no / erlend@autogt.no</span>
+									<span className="ml-3">post@autogt.no</span>
 								</dd>
 							</div>
 							<ul role="list" className="mt-6 flex items-center space-x-10">

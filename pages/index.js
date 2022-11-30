@@ -6,6 +6,7 @@ import Introduction from '../components/Introduction';
 import Webloader from '../components/Webloader';
 import heroimg from '/public/static/hero25.webp';
 import { NavLinks } from '../components/Navlinks';
+import { ImgSlider } from '../components/ImgSlider';
 
 export default function Home() {
 	return (
@@ -38,8 +39,8 @@ export default function Home() {
 				</div>
 			</div>
 			{/* Introduksjon */}
-			<div className="grid place-content-center">
-				<h1 className="my-24 text-6xl">Nettside under utvikling</h1>
+			<div className="flex items-center justify-center">
+				{/* <ImgSlider imageArr={[]} /> */}
 			</div>
 		</>
 	);
