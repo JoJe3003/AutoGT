@@ -7,6 +7,7 @@ function kontakt() {
 			<Head>
 				<title>Auto GT | Kontakt</title>
 			</Head>
+			<div>Kontakt oss!</div>
 		</>
 	);
 }
