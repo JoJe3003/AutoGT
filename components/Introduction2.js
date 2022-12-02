@@ -25,7 +25,7 @@ export default function Introduction2() {
 		<div className="bg-white">
 			<div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-24">
 				<div className="space-y-12">
-					<h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+					<h2 className="text-3xl font-bold tracking-tight text-accent2 sm:text-4xl">
 						Hils på teamet vårt!
 					</h2>
 
@@ -41,8 +41,6 @@ export default function Introduction2() {
 											className="rounded-lg object-cover shadow-lg"
 											src={person.imageUrl}
 											alt=""
-											layout="fill"
-											objectFit="cover"
 										/>
 									</div>
 									<div className="relative sm:col-span-2">
@@ -54,12 +52,12 @@ export default function Introduction2() {
 											<div>
 												<div className="text-lg">
 													<p className="text-gray-500">
-														Egenskaper: {person.egenskaper}
+														{person.egenskaper}
 													</p>
 												</div>
 												<div className="text-lg">
 													<p className="text-gray-500">
-														Interesser: {person.interesser}
+														{person.interesser}
 													</p>
 												</div>
 											</div>

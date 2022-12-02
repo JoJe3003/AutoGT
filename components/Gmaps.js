@@ -7,10 +7,10 @@ export default function Gmaps() {
 			height="500"
 			id="gmap_canvas"
 			src="https://maps.google.com/maps?q=Auto%20GT%20Stokke&t=&z=12&ie=UTF8&iwloc=&output=embed"
-			frameborder="0"
+			frameBorder="0"
 			scrolling="no"
-			marginheight="0"
-			marginwidth="0"
+			marginHeight="0"
+			marginWidth="0"
 			className="top-0 left-0 h-full w-full"
 		></iframe>
 	);

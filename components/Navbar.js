@@ -33,7 +33,7 @@ export default function Alphanav() {
 	const path = router.asPath;
 
 	return (
-		<Disclosure as="nav" className="border bg-white">
+		<Disclosure as="nav" className="border-b bg-white">
 			<>
 				{/* HEADER */}
 				<div className="mx-auto max-w-full px-4 sm:px-6 lg:px-8">
@@ -53,7 +53,7 @@ export default function Alphanav() {
 										href={link.href}
 										className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-700 ${
 											path === link.href
-												? 'border-accent1'
+												? 'border-accent2'
 												: 'border-transparent hover:border-gray-300 hover:text-gray-700'
 										}`}
 									>
@@ -97,7 +97,7 @@ export default function Alphanav() {
 										onClick={() => setIsShowing((isShowing) => !isShowing)}
 										className={`block py-2 pl-3 pr-4 text-base font-medium ${
 											path === link.href
-												? 'border-l-4 border-accent1 bg-indigo-50 text-accent1'
+												? 'border-l-4 border-accent2 bg-accent2/20 text-accent2'
 												: 'border-l-4 border-transparent text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700'
 										}`}
 									>

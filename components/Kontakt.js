@@ -97,7 +97,7 @@ export default function Example() {
 			<div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
 				<div className="bg-gray-50 px-4 py-16 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
 					<div className="mx-auto max-w-lg">
-						<h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+						<h2 className="text-2xl font-bold tracking-tight text-accent2 sm:text-3xl">
 							Ta kontakt
 						</h2>
 						<p className="mt-3 text-lg leading-6 text-gray-500">
@@ -198,7 +198,7 @@ export default function Example() {
 									name="full-name"
 									id="full-name"
 									autoComplete="name"
-									className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+									className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-accent2 focus:ring-accent2"
 									placeholder="Fullt navn"
 									value={fullname}
 									onChange={(e) => {
@@ -218,7 +218,7 @@ export default function Example() {
 									name="email"
 									type="email"
 									autoComplete="email"
-									className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+									className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-accent2 focus:ring-accent2"
 									placeholder="Epost"
 									value={email}
 									onChange={(e) => {
@@ -238,7 +238,7 @@ export default function Example() {
 									name="phone"
 									id="phone"
 									autoComplete="tel"
-									className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+									className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-accent2 focus:ring-accent2"
 									placeholder="Telefon"
 									value={phone}
 									onChange={(e) => {
@@ -257,9 +257,8 @@ export default function Example() {
 									id="message"
 									name="message"
 									rows={4}
-									className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+									className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-accent2 focus:ring-accent2"
 									placeholder="Melding"
-									defaultValue={''}
 									value={message}
 									onChange={(e) => {
 										setMessage(e.target.value);
@@ -272,7 +271,7 @@ export default function Example() {
 							<div>
 								<button
 									type="submit"
-									className="inline-flex justify-center rounded-md border border-transparent bg-accent1 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+									className="inline-flex justify-center rounded-md border border-transparent bg-accent2 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-accent2/80 focus:outline-none focus:ring-2 focus:ring-accent2 focus:ring-offset-2"
 								>
 									{buttonText}
 								</button>

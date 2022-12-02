@@ -3,6 +3,9 @@ module.exports = {
 	content: ['./pages/**/*.{html,js}', './components/**/*.{html,js}'],
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: ['var(--font-roboto)'],
+			},
 			colors: {
 				accent1: '#004225',
 				accent2: '#29465B',
