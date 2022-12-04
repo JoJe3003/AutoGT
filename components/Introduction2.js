@@ -16,7 +16,7 @@ export default function Introduction2() {
 			name: 'Erlend Høyen',
 			role: 'Eier',
 			imageUrl: profilErlend,
-			egenskaper: 'Upåklagelig moral og detalorienter.',
+			egenskaper: 'Upåklagelig moral og detaljorientert.',
 			interesser: 'Motorsport og lidenskapelig opptatt av bil.',
 		},
 	];

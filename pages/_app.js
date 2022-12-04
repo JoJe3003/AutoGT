@@ -3,6 +3,7 @@ import '../styles/reset.css';
 import Layout from '../components/Layout';
 import { Analytics } from '@vercel/analytics/react';
 import { Roboto_Flex } from '@next/font/google';
+import { getStaticProps } from './inventar';
 
 const roboto = Roboto_Flex({
 	subsets: ['latin'],

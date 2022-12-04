@@ -20,14 +20,19 @@ export default function Home() {
 
 			{/* Hero */}
 			<div className="px-30 relative flex w-full items-center justify-center bg-background object-center py-0">
-				<div>
+				<div className="absolute h-full w-full">
 					<Image
 						src={heroimg}
 						alt="Bilde av to biler"
-						layout="fill"
-						objectFit="cover"
-						objectPosition="center"
+						as="div"
+						fill
+						className="object-cover"
+						loading="eager"
 						priority
+						placeholder="blur"
+						sizes="(max-width: 768px) 33vw,
+              (max-width: 1200px) 50vw,
+              100vw"
 					/>
 				</div>
 				<div className="relative mx-8 my-64 flex flex-col items-center gap-16 text-white">
@@ -49,7 +54,7 @@ export default function Home() {
 					{/* <p>Her er noen av bilene vi kan tilby!</p> */}
 					<button className="inline-flex justify-center rounded-md border border-transparent bg-accent2 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-accent2/80 focus:outline-none focus:ring-2 focus:ring-accent2 focus:ring-offset-2">
 						<Link href="/inventar" className="text-white no-underline">
-							Utforsk flere biler
+							Utforsk inventar
 						</Link>
 					</button>
 				</div>
