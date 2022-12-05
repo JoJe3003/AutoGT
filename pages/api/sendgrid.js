@@ -22,6 +22,7 @@ async function sendEmail(req, res) {
           </div>
           <div>
             <p>${req.body.fullname},</p> mail: ✉️${req.body.email} <p>${req.body.phone}</p></div>
+            <p>Denne eposten ble sendt fra kontakt skjemaet til autogt.no</p>
         </div>
       </body>
       </html>`,

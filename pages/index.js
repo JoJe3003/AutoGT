@@ -62,3 +62,24 @@ export default function Home() {
 		</>
 	);
 }
+
+export async function getStaticProps() {
+	const res = await fetch(
+		'https://billink.no/page2_xml.php?kode=3baa6aaa-a8c2-4565-b6a4-4b4f4c33b5b0&butikk=agt&detaljert=1'
+	);
+	const xmlText = await res.text();
+
+	const $ = cheerio.load(xmlText, { xmlMode: true });
+	let xml = $('BODY')
+		.children()
+		.map(function (i, el) {
+			let fXml = '<?xml?><ANNONSE>' + $(this).html() + '</ANNONSE>';
+			let json = JSON.parse(xml2json(fXml, options));
+			return json;
+		})
+		.toArray();
+
+	let data = xml.reverse();
+
+	return { props: { data }, revalidate: 60 * 10 };
+}

@@ -150,7 +150,7 @@ export async function getStaticProps() {
 
 	let data = xml.reverse();
 
-	return { props: { data } };
+	return { props: { data }, revalidate: 60 * 10 };
 }
 
 export default inventar;
