@@ -90,7 +90,6 @@ function kontakt() {
 								</h3>
 								<div className="mt-2 text-base text-gray-500">
 									<p>3160, Stokke</p>
-									<p className="mt-1">Los Angeles, CA 90210</p>
 								</div>
 							</div>
 							<div>
