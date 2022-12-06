@@ -132,7 +132,7 @@ function inventar({ data }) {
 	);
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 	const res = await fetch(
 		'https://billink.no/page2_xml.php?kode=3baa6aaa-a8c2-4565-b6a4-4b4f4c33b5b0&butikk=agt&detaljert=1'
 	);
@@ -150,7 +150,7 @@ export async function getStaticProps() {
 
 	let data = xml.reverse();
 
-	return { props: { data }, revalidate: 60 * 10 };
+	return { props: { data } };
 }
 
 export default inventar;
