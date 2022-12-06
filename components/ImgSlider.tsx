@@ -77,6 +77,7 @@ export const ImgSlider = ({ imageArr }) => {
 							paginate(-1);
 						}
 					}}
+					className="relative"
 				>
 					<Image
 						key={page}

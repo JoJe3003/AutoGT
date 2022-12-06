@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
 	// }, []);
 
 	return (
-		<div>
+		<div className="flex min-h-screen flex-col justify-between">
 			{/* {loading ? <Webloader /> : null} */}
 			{/* <Webloader /> */}
 			<Navbar />

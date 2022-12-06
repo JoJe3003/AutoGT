@@ -2,15 +2,53 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Script from 'next/script';
-import Introduction from '../components/Introduction';
-import Webloader from '../components/Webloader';
 import heroimg from '/public/static/hero25.webp';
-import { NavLinks } from '../components/Navlinks';
-import { ImgSlider } from '../components/ImgSlider';
 import ImageSlideshow from '../components/ImageSlideshow';
 import Link from 'next/link';
+import { xml2json } from 'xml-js';
 
-export default function Home() {
+const cheerio = require('cheerio');
+
+function nativeType(value) {
+	var nValue = Number(value);
+	if (!isNaN(nValue)) {
+		return nValue;
+	}
+	var bValue = value.toLowerCase();
+	if (bValue === 'true') {
+		return true;
+	} else if (bValue === 'false') {
+		return false;
+	}
+	return value;
+}
+
+var removeJsonTextAttribute = function (value, parentElement) {
+	try {
+		var keyNo = Object.keys(parentElement._parent).length;
+		var keyName = Object.keys(parentElement._parent)[keyNo - 1];
+		parentElement._parent[keyName] = nativeType(value);
+	} catch (e) {
+		console.log(e);
+	}
+};
+
+var options = {
+	compact: true,
+	trim: true,
+	spaces: 2,
+	ignoreDeclaration: true,
+	ignoreInstruction: true,
+	ignoreAttributes: true,
+	ignoreComment: true,
+	ignoreCdata: true,
+	ignoreDoctype: true,
+	textFn: removeJsonTextAttribute,
+};
+
+export default function Home({ data }) {
+	const [slideshowArr, setSlideshowArr] = useState([]);
+
 	return (
 		<>
 			<Script async src="https://cdn.splitbee.io/sb.js" />
@@ -30,9 +68,9 @@ export default function Home() {
 						loading="eager"
 						priority
 						placeholder="blur"
-						sizes="(max-width: 768px) 33vw,
-              (max-width: 1200px) 50vw,
-              100vw"
+						// sizes="(max-width: 768px) 33vw,
+						// 		(max-width: 1200px) 50vw,
+						// 		100vw"
 					/>
 				</div>
 				<div className="relative mx-8 my-64 flex flex-col items-center gap-16 text-white">
@@ -45,6 +83,7 @@ export default function Home() {
 					</button> */}
 				</div>
 			</div>
+
 			{/* Introduksjon */}
 			<div className="flex flex-col items-center justify-center gap-0 xl:flex-row xl:gap-16">
 				<ImageSlideshow />
@@ -63,23 +102,37 @@ export default function Home() {
 	);
 }
 
-export async function getStaticProps() {
-	const res = await fetch(
-		'https://billink.no/page2_xml.php?kode=3baa6aaa-a8c2-4565-b6a4-4b4f4c33b5b0&butikk=agt&detaljert=1'
-	);
-	const xmlText = await res.text();
+// export async function getStaticProps() {
+// 	const res = await fetch(
+// 		'https://billink.no/page2_xml.php?kode=3baa6aaa-a8c2-4565-b6a4-4b4f4c33b5b0&butikk=agt&detaljert=1'
+// 	);
+// 	const xmlText = await res.text();
 
-	const $ = cheerio.load(xmlText, { xmlMode: true });
-	let xml = $('BODY')
-		.children()
-		.map(function (i, el) {
-			let fXml = '<?xml?><ANNONSE>' + $(this).html() + '</ANNONSE>';
-			let json = JSON.parse(xml2json(fXml, options));
-			return json;
-		})
-		.toArray();
+// 	const $ = cheerio.load(xmlText, { xmlMode: true });
+// 	let xml = $('BODY')
+// 		.children()
+// 		.map(function (i, el) {
+// 			let fXml = '<?xml?><ANNONSE>' + $(this).html() + '</ANNONSE>';
+// 			let json = JSON.parse(xml2json(fXml, options));
+// 			return json;
+// 		})
+// 		.toArray();
 
-	let data = xml.reverse();
+// 	let data = xml.reverse();
 
-	return { props: { data }, revalidate: 60 * 10 };
-}
+// 	// Post data
+
+// 	return { props: { data }, revalidate: 60 * 10 };
+// }
+
+// async function postData(dataToPost) {
+// 	const res = await fetch('/api/biler', {
+// 		method: 'POST',
+// 		body: JSON.stringify(dataToPost),
+// 		headers: {
+// 			'Content-Type': 'Application/json',
+// 		},
+// 	});
+// 	const data = await res.json();
+// 	console.log(data);
+// }
