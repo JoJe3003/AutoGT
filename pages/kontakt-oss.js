@@ -35,7 +35,7 @@ function kontakt() {
 							Kontaktinformasjon
 						</h2>
 						<div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0">
-							<div className="sm:col-span-2">
+							{/* <div className="sm:col-span-2">
 								<h3 className="text-lg font-medium leading-6 text-gray-900">
 									Generel Epost
 								</h3>
@@ -45,7 +45,7 @@ function kontakt() {
 										<dd>post@autogt.no</dd>
 									</div>
 								</dl>
-							</div>
+							</div> */}
 							<div>
 								<h3 className="text-lg font-medium leading-6 text-gray-900">
 									Endre Holmedal
