@@ -93,7 +93,7 @@ export default function Home({ data }) {
 					{/* <p>Her er noen av bilene vi kan tilby!</p> */}
 					<button className="inline-flex justify-center rounded-md border border-transparent bg-accent2 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-accent2/80 focus:outline-none focus:ring-2 focus:ring-accent2 focus:ring-offset-2">
 						<Link href="/inventar" className="text-white no-underline">
-							Utforsk inventar
+							Våre biler
 						</Link>
 					</button>
 				</div>
