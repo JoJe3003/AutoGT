@@ -101,7 +101,7 @@ export default function Example() {
 							Ta kontakt
 						</h2>
 						<p className="mt-3 text-lg leading-6 text-gray-500">
-							Dersom et av alternativene over er av interrese, send oss gjerne en
+							Dersom et av alternativene over er av interesse, send oss gjerne en
 							melding så vi kan følge opp med en hyggelig bilprat.
 						</p>
 						<dl className="mt-8 text-base text-gray-500">
