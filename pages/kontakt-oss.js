@@ -35,7 +35,7 @@ function kontakt() {
 							Kontaktinformasjon
 						</h2>
 						<div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0">
-							{/* <div className="sm:col-span-2">
+							<div className="sm:col-span-2">
 								<h3 className="text-lg font-medium leading-6 text-gray-900">
 									Generel Epost
 								</h3>
@@ -45,7 +45,7 @@ function kontakt() {
 										<dd>post@autogt.no</dd>
 									</div>
 								</dl>
-							</div> */}
+							</div>
 							<div>
 								<h3 className="text-lg font-medium leading-6 text-gray-900">
 									Endre Holmedal
@@ -57,7 +57,7 @@ function kontakt() {
 									</div>
 									<div className="mt-1">
 										<dt className="sr-only">Telefon</dt>
-										<dd>+47 12345678</dd>
+										<dd>+47 954 20 529</dd>
 									</div>
 								</dl>
 							</div>
@@ -72,7 +72,7 @@ function kontakt() {
 									</div>
 									<div className="mt-1">
 										<dt className="sr-only">Phone number</dt>
-										<dd>+47 12345678</dd>
+										<dd>+47 464 82 654</dd>
 									</div>
 								</dl>
 							</div>
@@ -81,16 +81,17 @@ function kontakt() {
 
 					<div className="mt-16 pt-16 lg:grid lg:grid-cols-3 lg:gap-8">
 						<h2 className="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight">
-							Lokasjon og Åpningstider
+							Adresse og åpningstider
 						</h2>
 						<div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0">
 							<div>
 								<h3 className="text-lg font-medium leading-6 text-gray-900">
-									Borgerskogen 45 E
+									Borgerskogen 45E
 								</h3>
 								<div className="mt-2 text-base text-gray-500">
 									<p>3160, Stokke</p>
 								</div>
+								<div className="mt-2 text-base italic text-gray-500">Port 1</div>
 							</div>
 							<div>
 								<h3 className="text-lg font-medium leading-6 text-gray-900">
