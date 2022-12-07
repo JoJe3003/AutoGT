@@ -64,7 +64,7 @@ export default function Home({ data }) {
 						alt="Bilde av to biler"
 						as="div"
 						fill
-						className="object-cover"
+						className="object-cover saturate-200"
 						loading="eager"
 						priority
 						placeholder="blur"
@@ -74,7 +74,7 @@ export default function Home({ data }) {
 					/>
 				</div>
 				<div className="relative mx-8 my-64 flex flex-col items-center gap-16 text-white">
-					<h1 className="text-center text-4xl md:text-6xl ">
+					<h1 className="text-center text-4xl md:-mt-28 md:text-6xl">
 						Velkommen til <span className="block">Auto GT</span>
 					</h1>
 
@@ -85,7 +85,7 @@ export default function Home({ data }) {
 			</div>
 
 			{/* Introduksjon */}
-			<div className="flex flex-col items-center justify-center gap-0 xl:flex-row xl:gap-16">
+			<div className="mt-14 flex flex-col items-center justify-center gap-0 xl:flex-row xl:gap-16">
 				<ImageSlideshow />
 				<div className="prose-h2 prose my-4 flex flex-col items-center gap-3 bg-white xl:items-start">
 					<h2 className="text-2xl">Her er noen av bilene vi kan tilby!</h2>
