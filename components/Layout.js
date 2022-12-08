@@ -4,22 +4,25 @@ import Navbar from './Navbar';
 import Webloader from './Webloader';
 
 const Layout = ({ children }) => {
-	// const [loading, setLoading] = useState(false);
+	const [loading, setLoading] = useState(true);
 
-	// useEffect(() => {
-	// 	setLoading(true);
-	// 	setTimeout(() => {
-	// 		setLoading(false);
-	// 	}, 2000);
-	// }, []);
+	useEffect(() => {
+		setLoading(true);
+		setTimeout(() => {
+			setLoading(false);
+		}, 2000);
+	}, []);
 
 	return (
 		<div className="flex min-h-screen flex-col justify-between">
-			{/* {loading ? <Webloader /> : null} */}
-			{/* <Webloader /> */}
-			<Navbar />
-			<main>{children}</main>
-			<Footer />
+			<Webloader isVisible={loading} />
+			{loading ? null : (
+				<>
+					<Navbar />
+					<main>{children}</main>
+					<Footer />
+				</>
+			)}
 		</div>
 	);
 };
