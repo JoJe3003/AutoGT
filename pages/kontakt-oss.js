@@ -8,7 +8,7 @@ function kontakt() {
 	return (
 		<>
 			<Head>
-				<title>Auto GT | Kontakt</title>
+				<title>Auto GT | Kontakt oss</title>
 			</Head>
 			<div className="bg-white">
 				<div className="h-96">
@@ -34,11 +34,9 @@ function kontakt() {
 						<h2 className="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight">
 							Kontaktinformasjon
 						</h2>
+
 						<div className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0">
 							<div className="sm:col-span-2">
-								<h3 className="text-lg font-medium leading-6 text-gray-900">
-									Generel Epost
-								</h3>
 								<dl className="mt-2 text-base text-gray-500">
 									<div>
 										<dt className="sr-only">Email</dt>

@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { xml2json } from 'xml-js';
-import { ImgSlider } from '../components/ImgSlider';
 
 // const xml2json = require('xml-js');
 const cheerio = require('cheerio');
@@ -46,11 +45,11 @@ var options = {
 	textFn: removeJsonTextAttribute,
 };
 
-function inventar({ data }) {
+function vaareBiler({ data }) {
 	return (
 		<>
 			<Head>
-				<title>Auto GT | Inventar</title>
+				<title>Auto GT | Våre biler</title>
 			</Head>
 			<div className="bg-white">
 				<div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -153,4 +152,4 @@ export async function getServerSideProps() {
 	return { props: { data } };
 }
 
-export default inventar;
+export default vaareBiler;

@@ -14,7 +14,7 @@ const links = [
 	},
 	{
 		name: 'Våre biler',
-		href: '/inventar',
+		href: '/vaare-biler',
 	},
 	{
 		name: 'Vi tilbyr',

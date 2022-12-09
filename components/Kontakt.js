@@ -135,7 +135,7 @@ export default function Example() {
 									<span className="ml-3">post@autogt.no</span>
 								</dd>
 							</div>
-							<ul role="list" className="mt-6 flex items-center space-x-10">
+							{/* <ul role="list" className="mt-6 flex items-center space-x-10">
 								<li>
 									<a
 										className="text-gray-500 hover:text-gray-900"
@@ -182,7 +182,29 @@ export default function Example() {
 										</svg>
 									</a>
 								</li>
-							</ul>
+								<li>
+									<a
+										className="text-gray-500 hover:text-gray-900"
+										href="https://www.youtube.com/@autogtas/videos"
+									>
+										<span className="sr-only">Youtube</span>
+										<svg
+											width={24}
+											height={24}
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											className="h-6 w-6"
+											aria-hidden="true"
+										>
+											<path
+												fill="currentColor"
+												d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5l-6-3.5v7z"
+											/>
+										</svg>
+									</a>
+								</li>
+							</ul> */}
 						</dl>
 					</div>
 				</div>
