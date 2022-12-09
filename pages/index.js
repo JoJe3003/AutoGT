@@ -92,7 +92,7 @@ export default function Home({ data }) {
 					{/* <h2 className="text-2xl">Våre biler</h2> */}
 					{/* <p>Her er noen av bilene vi kan tilby!</p> */}
 					<button className="inline-flex justify-center rounded-md border border-transparent bg-accent2 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-accent2/80 focus:outline-none focus:ring-2 focus:ring-accent2 focus:ring-offset-2">
-						<Link href="/inventar" className="text-white no-underline">
+						<Link href="/vaare-biler" className="text-white no-underline">
 							Våre biler
 						</Link>
 					</button>
