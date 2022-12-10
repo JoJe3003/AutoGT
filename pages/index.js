@@ -46,7 +46,7 @@ var options = {
 	textFn: removeJsonTextAttribute,
 };
 
-export default function Home({ data }) {
+export default function Home({ arrBiler }) {
 	const [slideshowArr, setSlideshowArr] = useState([]);
 
 	return (
@@ -86,7 +86,7 @@ export default function Home({ data }) {
 
 			{/* Introduksjon */}
 			<div className="mt-14 flex flex-col items-center justify-center gap-0 xl:flex-row xl:gap-16">
-				<ImageSlideshow />
+				<ImageSlideshow arr={arrBiler} />
 				<div className="prose-h2 prose my-4 flex flex-col items-center gap-3 bg-white xl:items-start">
 					<h2 className="text-2xl">Her er noen av bilene vi kan tilby!</h2>
 					{/* <h2 className="text-2xl">Våre biler</h2> */}
@@ -102,28 +102,29 @@ export default function Home({ data }) {
 	);
 }
 
-// export async function getStaticProps() {
-// 	const res = await fetch(
-// 		'https://billink.no/page2_xml.php?kode=3baa6aaa-a8c2-4565-b6a4-4b4f4c33b5b0&butikk=agt&detaljert=1'
-// 	);
-// 	const xmlText = await res.text();
+export async function getServerSideProps() {
+	const res = await fetch(
+		'https://billink.no/page2_xml.php?kode=3baa6aaa-a8c2-4565-b6a4-4b4f4c33b5b0&butikk=agt&detaljert=1'
+	);
+	const xmlText = await res.text();
 
-// 	const $ = cheerio.load(xmlText, { xmlMode: true });
-// 	let xml = $('BODY')
-// 		.children()
-// 		.map(function (i, el) {
-// 			let fXml = '<?xml?><ANNONSE>' + $(this).html() + '</ANNONSE>';
-// 			let json = JSON.parse(xml2json(fXml, options));
-// 			return json;
-// 		})
-// 		.toArray();
+	const $ = cheerio.load(xmlText, { xmlMode: true });
+	let biler = $('BODY')
+		.children()
+		.map(function (i, el) {
+			let fXml = '<?xml?><ANNONSE>' + $(this).html() + '</ANNONSE>';
+			const $$ = cheerio.load(fXml, { xmlMode: true });
+			let firstPic = $$('URL').first().html();
+			return firstPic;
+		})
+		.toArray();
 
-// 	let data = xml.reverse();
+	let arrBiler = biler.reverse().sort(() => Math.random() - 0.5);
 
-// 	// Post data
+	// Post data
 
-// 	return { props: { data }, revalidate: 60 * 10 };
-// }
+	return { props: { arrBiler } };
+}
 
 // async function postData(dataToPost) {
 // 	const res = await fetch('/api/biler', {
