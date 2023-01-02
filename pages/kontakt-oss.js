@@ -93,22 +93,16 @@ function kontakt() {
 							</div>
 							<div>
 								<h3 className="text-lg font-medium leading-6 text-gray-900">
-									Mandag - Fredag
+									Torsdag
 								</h3>
 								<div className="my-2 text-base text-gray-500">
-									<p>17:00 - 19:00</p>
+									<p>16:00 - 19:00</p>
 								</div>
 								<h3 className="text-lg font-medium leading-6 text-gray-900">
 									Lørdag
 								</h3>
 								<div className="my-2 text-base text-gray-500">
 									<p>11:00 - 14:00</p>
-								</div>
-								<h3 className="text-lg font-medium leading-6 text-gray-900">
-									Søndag
-								</h3>
-								<div className="my-2 text-base text-gray-500">
-									<p>Stengt</p>
 								</div>
 							</div>
 						</div>
