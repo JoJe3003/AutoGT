@@ -28,8 +28,8 @@ function vitilbyr() {
 							</span>
 						</h1>
 						<p className="mt-8 text-xl leading-8">
-							Det å selge sin egen bil kan være tidskrevende, vanskelig og iblant en
-							ubehagelig prosess. Auto GT har ressursene, ekspertisen og publikumet
+							Å selge sin egen bil kan være tidskrevende, vanskelig og iblant en
+							ubehagelig prosess. Auto GT har ressurser og ekspertise
 							til å selge din bil på en effektiv og bryderi fri måte.
 						</p>
 					</div>
@@ -57,19 +57,18 @@ function vitilbyr() {
 							<li>
 								<p className="mx-2">
 									<span className="font-bold text-accent2">Formidling</span> - Vi
-									opptrer som mellommann, salget blir solgt i ditt navn og
-									reklamasjonsansvaret står på deg.
+									opptrer som mellommann, bilen blir solgt i ditt navn og
+									reklamasjonsansvaret er ditt.
 								</p>
 							</li>
 						</ul>
 					</div>
 					<div className="mx-auto max-w-[100ch] text-lg">
 						<p className="mt-8 text-xl leading-8">
-							Skreddersydd avtale opp mot ditt mål. Biler til kommisjon og formidling
-							blir behandlet på samme måte som våre egne biler, derfor må de også være
-							opp mot samme standard. Er bilen eldre og utenfor garantiperiode kan det
-							hende vi vil ha tilstandsrapport, dette kan vi hjelpe med å få utført
-							via våre kanaler.
+							Auto GT Skreddersydd en avtale opp mot dine ønsker og behov. Biler til 
+							kommisjon og formidling	må være opp mot samme standard som våre egne biler. 
+							Er bilen eldre og utenfor garantiperiode kan det hende vi ber om tilstandsrapport, 
+							dette kan vi hjelpe med å få utført via våre kontakter.
 						</p>
 					</div>
 				</div>
