@@ -22,14 +22,18 @@ export default function omoss() {
 									Våre biler er nøye håndplukket, utbedret og klargjort før salg.
 								</span>
 								<span>
-									Vi selger biler vi kunne tenkt oss å kjøpe tilbake ved senere
-									anledning. Vårt mål er å oppnå et kontinuerlig kundeforhold der
-									Auto GT blir det naturlige leddet mellom din nåværende og
-									fremtidige bil.
+									Vårt mål er å oppnå et trygt og langsiktig kundeforhold som 
+									innebærer at vi selger biler vi kunne tenke oss å kjøpe tilbake
+									ved en senere anledning.
 								</span>
 								<span>
-									Finner du ikke bilen du leter etter i vårt sortiment så kan vi
+									Finner du ikke bilen du leter etter i vårt sortiment kan vi
 									finne den for deg!
+								</span>
+								<span>
+									Auto GT - Den naturlige forbindelsen mellom din nåværende og
+									fremtidige bil.
+
 								</span>
 							</p>
 						</div>
