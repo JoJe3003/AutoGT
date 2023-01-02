@@ -24,11 +24,8 @@ export default function omoss() {
 								<span>
 									Vårt mål er å oppnå et trygt og langsiktig kundeforhold som 
 									innebærer at vi selger biler vi kunne tenke oss å kjøpe tilbake
-									ved en senere anledning.
-								</span>
-								<span>
-									Finner du ikke bilen du leter etter i vårt sortiment kan vi
-									finne den for deg!
+									ved en senere anledning. Finner du ikke bilen du leter etter i 
+									vårt sortiment kan vi finne den for deg!
 								</span>
 								<span>
 									Auto GT - Den naturlige forbindelsen mellom din nåværende og
